@@ -1,0 +1,21 @@
+#home {
+    height: 800px;
+    width: 100%;
+    background-color: $blue2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #container-home {
+        width: 833px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid white;
+        background-image: url('/assets/img/image/home/4.jpg');
+        background-size: cover;
+        opacity: 0.8;
+        border-radius: 30px;
+    }
+
+}
