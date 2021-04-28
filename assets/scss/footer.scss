@@ -1,0 +1,19 @@
+footer {
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    background-color: $beige;
+    #container-footer {
+        width: 940px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 2px;
+        }
+    }
+}

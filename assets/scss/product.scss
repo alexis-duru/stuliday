@@ -1,0 +1,52 @@
+
+#header-product {
+    background-color: $blue2;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    #search-product {
+        width: 940px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+#product-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    #container-in {
+        width: 920px;
+        height: auto;
+        .product {
+            width: 833px;
+            height: auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            display: flex;
+            img {
+                width: 50%;
+                height: 100%;
+            }
+
+            .description-product {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 15px;
+                }
+            }
+        }
+    }
+}
