@@ -6,7 +6,7 @@ header {
     background-color: $beige;
     justify-content: center;
     nav {
-        width: 920px;
+        width: 1170px;
         height: auto;
         height: 80px;
         display: flex;
@@ -35,15 +35,16 @@ header {
                 a {
                     color: black;
                     letter-spacing: 3px;
-                    width: auto;
-                    
+                    width: auto; 
+                }
+                a:hover {
+                    border-bottom: 2px solid black;
                 }
 
             }
             li:hover {
                 color: black;
-                opacity: 0.3;
-                text-decoration: underline;
+                opacity: 0.5;
             }
         }
         

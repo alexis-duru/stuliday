@@ -33,7 +33,7 @@ header {
   justify-content: center;
 }
 header nav {
-  width: 920px;
+  width: 1170px;
   height: auto;
   height: 80px;
   display: flex;
@@ -67,23 +67,25 @@ header nav ul li a {
   letter-spacing: 3px;
   width: auto;
 }
+header nav ul li a:hover {
+  border-bottom: 2px solid black;
+}
 header nav ul li:hover {
   color: black;
-  opacity: 0.3;
-  text-decoration: underline;
+  opacity: 0.5;
 }
 
 #home {
   height: 800px;
   width: 100%;
-  background-color: #8da3c1;
+  background-color: #a2bfe6bf;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 #home #container-home {
-  width: 833px;
+  width: 50%;
   height: 50%;
   display: flex;
   justify-content: center;
@@ -93,7 +95,6 @@ header nav ul li:hover {
   background-size: cover;
   opacity: 0.8;
   border-radius: 30px;
-  margin-bottom: 50px;
   /*btn_background*/
   /*btn_text*/
   /*highlight*/
@@ -148,22 +149,24 @@ header nav ul li:hover {
   text-decoration: none;
 }
 #home #container-home .effect01 {
-  color: #FFF;
-  border: 4px solid #000;
-  border-radius: 30px;
-  box-shadow: 0px 0px 0px 1px #000 inset;
-  background-color: #000;
+  color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 0px 1px #fff inset;
+  /* background-color: #000; */
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   font-family: "gallient";
   opacity: 0.9;
+  font-size: 14px;
+  font-weight: 800;
 }
 #home #container-home .effect01:hover {
-  border: 4px solid #666;
+  border: 1px solid black;
   background-color: #FFF;
-  box-shadow: 0px 0px 0px 4px #EEE inset;
+  box-shadow: 0px 0px 0px 1px #EEE inset;
 }
 #home #container-home .effect01 span {
   transition: all 0.2s ease-out;
@@ -197,59 +200,24 @@ header nav ul li:hover {
   -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
 }
-#home #container-home-bottom {
-  width: 833px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: 2px solid white;
-  border-radius: 30px;
-}
-#home #container-home-bottom > div > h3 {
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  font-family: "montserrat";
-  font-weight: 400;
-  color: white;
-  font-size: 12px;
-}
-#home #container-home-bottom #container-last-chance {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 70%;
-}
-#home #container-home-bottom #container-last-chance #last-chance-1 {
-  width: 40%;
-  height: auto;
-  background-image: url("/assets/img/image/home/last-chance-1.jpg");
-  background-size: cover;
-  border-radius: 30px;
-}
-#home #container-home-bottom #container-last-chance #last-chance-2 {
-  width: 40%;
-  height: auto;
-  background-image: url("/assets/img/image/home/last-chance-2.jpg");
-  background-size: cover;
-  border-radius: 30px;
-}
 
 footer {
   height: 89px;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: #ebe0d9;
 }
 footer #container-footer {
-  width: 940px;
+  width: 1190px;
   height: auto;
   display: flex;
   flex-direction: column;
 }
 footer #container-footer h2 {
   height: 100%;
+  font-size: 15px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,19 +225,20 @@ footer #container-footer h2 {
 }
 
 #header-product {
-  background-color: #8da3c1;
+  background-color: #a2bfe6bf;
   width: 100%;
   height: 160px;
   display: flex;
   justify-content: center;
 }
 #header-product #search-product {
-  width: 940px;
+  width: 1920px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #a2bfe6bf;
 }
 
 #product-container {
