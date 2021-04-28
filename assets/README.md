@@ -21,10 +21,16 @@ Ne pas utiliser Bootstrap (mais vous pouvez utiliser un autre framework CSS : Bu
 
 
 Ce sera un projet en PHP qui contiendra :
-Une page d'accueil qui permet de naviguer sur les différentes pages
-Une page de connexion/inscription
-Une page d'affichage des biens
-Une page de profil qui affiche les biens de la personne connectée et qui permet l'édition et la suppression.
+
+    1. Une page d'accueil qui permet de naviguer sur les différentes pages
+
+    2. Une page de connexion/inscription
+
+    3.Une page d'affichage des biens
+
+    4.Une page de profil qui affiche les biens de la personne connectée et qui permet l'édition et la suppression.
+
+
 Charte graphique libre
 Spécifications liées au projet
 Un powerpoint/canva de présentation sera réalisé qui contiendra un résumé du projet, le cahier des charges suivi (inclure la charte graphique choisie et les technologies employées).
@@ -41,9 +47,7 @@ Structure de la base de données :
          - password (varchar, crypted, no-char-limit) 
          - role (varchar, 255) // (ou alors : on peut utiliser un int mais moins implicite)
 
-<!-- Pour le projet studiday les products seront appartement pour la BDD -->
-
-    - products : 
+    - apartments : 
         - name (varchar, 255)
         - description (text)
         - price (int, 10)
