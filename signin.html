@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="Assets/css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <title>MY ACCOUNT</title>
+    <title>LOGIN</title>
 </head>
+
 <body>
     <header>
         <nav>
-            <h1>© STULIDAY 2021</h1>
+            <h1>STULIDAY</h1>
             <ul>
                 <li>
                     <a href="index.html">HOME</a>
                 </li>
                 <li>
-                    <a href="product.html">APARTMENT</a>
+                    <a href="rental.html">APARTMENT</a>
                 </li>
                 <li>
                     <a href="profil.html">MY ACCOUNT</a>
@@ -29,22 +31,58 @@
         </nav>
     </header>
 
-    <section id="header-product">
-        <div id="search-product">
+    <section id="header-rental">
+        <div id="search-rental">
             <div>
-                <h2>SIGN UP / SIGN IN</h2>
+                <h2>SIGN IN</h2>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="signin-container">
+        <div id="signin-container-in">
+            <div id="signin-formulaire-container">
+                <form action="" method="POST" class="sign-in">
+                    <div id="signin-box-formulaire">
+                        <p>EMAIL</p>
+                        <input class="signin-input-form" type="email" placeholder="">
+                    </div>
 
+                    <div id="signin-box-formulaire">
+                        <p>USERNAME</p>
+                        <input class="signin-input-form" type="text" placeholder="">
+                    </div>
+
+                    <div id="password">
+                        <p>CHOOSE A PASSWORD</p>
+                        <input class="signin-input-form" type="password" placeholder="">
+                    </div>
+
+                    <div id="password">
+                        <p>ENTER YOUR PASSWORD AGAIN</p>
+                        <input class="signin-input-form" type="password" placeholder="">
+                    </div>
+
+                    <div id="cgu">
+                        <input class="input-form" type="checkbox" placeholder="">
+                        <p>Accept the <a id="cgu-link" href='#'>terms and conditions</a></p>
+                    </div>
+
+
+                    <div id="btn-contact">
+                        <a href="index.html">REGISTER NOW</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
     </section>
     
 
+
     <footer>
         <div id="container-footer">
-            <h2>STULIDAY 2021</h2>
+            <h2>© STULIDAY 2021</h2>
             <!-- <div>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-facebook-f"></i>
@@ -58,4 +96,5 @@
     <script src="assets/lib/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Monstserrat";
+  src: url("../font/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "gallient";
+  src: url("../font/gallientregular.ttf");
+}
+@font-face {
+  font-family: "niguella";
+  src: url("../font/Niguella.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto-Regular.ttf");
+}
 * {
   padding: 0px;
   margin: 0px;
@@ -22,6 +42,7 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 header {
@@ -238,13 +259,13 @@ footer #container-footer h2 {
   letter-spacing: 2px;
 }
 
-#header-product {
+#header-rental {
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
 }
-#header-product #search-product {
+#header-rental #search-rental {
   width: 1920px;
   height: auto;
   display: flex;
@@ -253,7 +274,7 @@ footer #container-footer h2 {
   flex-direction: column;
 }
 
-#product-container {
+#rental-container {
   width: auto;
   height: auto;
   background-color: white;
@@ -261,7 +282,7 @@ footer #container-footer h2 {
   justify-content: center;
   margin-bottom: 100px;
 }
-#product-container #container-in {
+#rental-container #container-in {
   width: 68%;
   height: auto;
   background-color: #ebe0d9;
@@ -271,7 +292,7 @@ footer #container-footer h2 {
   align-items: center;
   border-radius: 30px;
 }
-#product-container #container-in .product {
+#rental-container #container-in .rental {
   width: 30%;
   height: auto;
   background-color: white;
@@ -281,18 +302,18 @@ footer #container-footer h2 {
   border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
-#product-container #container-in .product img {
+#rental-container #container-in .rental img {
   width: 100%;
   height: 60%;
   border-radius: 20px;
   margin-bottom: 10px;
 }
-#product-container #container-in .product h3 {
+#rental-container #container-in .rental h3 {
   font-size: 15px;
   font-family: "roboto";
   margin-bottom: 10px;
 }
-#product-container #container-in .product p {
+#rental-container #container-in .rental p {
   font-size: 10px;
   font-family: "roboto";
 }
@@ -316,32 +337,36 @@ footer #container-footer h2 {
   flex-direction: column;
   border-radius: 50px;
 }
-#login-container #login-container-in #inscription-utilisateur {
+#login-container #login-container-in #login-inscription-utilisateur {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
   width: auto;
   height: 30px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #ebe0d9;
+  padding: 5px 10px 5px 10px;
 }
-#login-container #login-container-in #inscription-utilisateur p {
-  font-family: "Roboto";
+#login-container #login-container-in #login-inscription-utilisateur p {
+  font-family: "gallient";
+  color: black;
+}
+#login-container #login-container-in #login-inscription-utilisateur a {
+  text-decoration: none;
   color: white;
+  font-family: "roboto";
 }
-#login-container #login-container-in #inscription-utilisateur a {
+#login-container #login-container-in #login-inscription-utilisateur a:hover {
   text-decoration: none;
   color: black;
   font-family: "roboto";
   margin-top: 10px;
+  opacity: 1;
+  transition: ease-in 0.4s;
 }
-#login-container #login-container-in #inscription-utilisateur a:hover {
-  text-decoration: none;
-  color: black;
-  font-family: "roboto";
-  margin-top: 10px;
-  opacity: 0.7;
-}
-#login-container #login-container-in #formulaire-container {
+#login-container #login-container-in #login-formulaire-container {
   width: 39vw;
   height: 30%;
   display: flex;
@@ -353,14 +378,14 @@ footer #container-footer h2 {
   opacity: 1;
   border-radius: 30px;
 }
-#login-container #login-container-in #formulaire-container .sign-in {
+#login-container #login-container-in #login-formulaire-container .login-sign-in {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
   width: 15vw;
 }
-#login-container #login-container-in #formulaire-container .sign-in .input-form {
+#login-container #login-container-in #login-formulaire-container .login-sign-in .login-input-form {
   font-family: "roboto";
   text-align: center;
   height: 40px;
@@ -372,7 +397,7 @@ footer #container-footer h2 {
   font-size: 20px;
   border-radius: 10px;
 }
-#login-container #login-container-in #formulaire-container .sign-in a {
+#login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact {
   height: 40px;
   display: flex;
   justify-content: center;
@@ -387,17 +412,107 @@ footer #container-footer h2 {
   text-align: center;
   color: black;
 }
-#login-container #login-container-in #formulaire-container .sign-in a:hover {
+#login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact:hover {
   background-color: #f7e9df;
   transition: 0.3s ease-in;
+  color: black;
 }
-#login-container #login-container-in #formulaire-container .sign-in p {
+#login-container #login-container-in #login-formulaire-container .login-sign-in p {
   font-family: "gallient";
   letter-spacing: 4px;
   opacity: 1;
   font-size: 15px;
   font-weight: 800;
   text-align: center;
+}
+
+#signin-container {
+  width: 100%;
+  height: 700px;
+  background-image: url("../img/image/home/background-home.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#signin-container #signin-container-in {
+  height: 700px;
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50px;
+}
+#signin-container #signin-container-in #signin-formulaire-container {
+  width: 39vw;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  background-image: url("/assets/img/image/home/4 copie.jpg");
+  background-size: cover;
+  opacity: 1;
+  border-radius: 30px;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  width: 23vw;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in .signin-input-form {
+  font-family: "roboto";
+  text-align: center;
+  height: 40px;
+  background-color: #f7e9df;
+  color: black;
+  outline: none;
+  width: 100%;
+  opacity: 0.7;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in #btn-contact {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  text-decoration: none;
+  font-family: "gallient";
+  letter-spacing: 4px;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in #btn-contact:hover {
+  background-color: #f7e9df;
+  transition: 0.3s ease-in;
+  color: black;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in p {
+  font-family: "gallient";
+  letter-spacing: 4px;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+}
+#signin-container #signin-container-in #signin-formulaire-container #cgu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+#signin-container #signin-container-in #signin-formulaire-container #cgu p {
+  font-size: 12px;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
