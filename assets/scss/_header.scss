@@ -1,18 +1,19 @@
 header {
-    width: 100%;
+    width: auto;
     height: 80px;
     text-decoration: none;
     display: flex;
     background-color: $beige;
     justify-content: center;
     nav {
-        width: 1170px;
+        width: 80%;
         height: auto;
         height: 80px;
         display: flex;
         justify-content: space-between;
         padding: 0px 10px 0px 10px;
         background-color: $beige;
+        text-align: center;
         h1 {
             display: flex;
             align-items: center;

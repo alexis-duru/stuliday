@@ -25,7 +25,7 @@ a {
 }
 
 header {
-  width: 100%;
+  width: auto;
   height: 80px;
   text-decoration: none;
   display: flex;
@@ -33,13 +33,14 @@ header {
   justify-content: center;
 }
 header nav {
-  width: 1170px;
+  width: 80%;
   height: auto;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px 0px 10px;
   background-color: #ebe0d9;
+  text-align: center;
 }
 header nav h1 {
   display: flex;
@@ -76,6 +77,8 @@ header nav ul li:hover {
 }
 
 #container-in-home {
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,7 +127,8 @@ header nav ul li:hover {
   justify-content: center;
   text-align: center;
   padding: 40px 0px;
-  width: 240px;
+  width: auto;
+  height: auto;
 }
 #container-in-home #home #container-home .container span {
   color: black;
@@ -301,6 +305,7 @@ footer #container-footer h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 #login-container #login-container-in {
   height: 700px;
@@ -311,8 +316,33 @@ footer #container-footer h2 {
   flex-direction: column;
   border-radius: 50px;
 }
+#login-container #login-container-in #inscription-utilisateur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: auto;
+  height: 30px;
+}
+#login-container #login-container-in #inscription-utilisateur p {
+  font-family: "Roboto";
+  color: white;
+}
+#login-container #login-container-in #inscription-utilisateur a {
+  text-decoration: none;
+  color: black;
+  font-family: "roboto";
+  margin-top: 10px;
+}
+#login-container #login-container-in #inscription-utilisateur a:hover {
+  text-decoration: none;
+  color: black;
+  font-family: "roboto";
+  margin-top: 10px;
+  opacity: 0.7;
+}
 #login-container #login-container-in #formulaire-container {
-  width: 50%;
+  width: 39vw;
   height: 30%;
   display: flex;
   justify-content: center;
@@ -328,7 +358,7 @@ footer #container-footer h2 {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  width: 50%;
+  width: 15vw;
 }
 #login-container #login-container-in #formulaire-container .sign-in .input-form {
   font-family: "roboto";

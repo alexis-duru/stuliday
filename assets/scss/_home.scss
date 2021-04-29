@@ -1,5 +1,7 @@
 
 #container-in-home {
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +50,8 @@
               text-align: center;
               // background-color: #FFF;
               padding:  40px 0px;
-              width: 240px;
+              width: auto;
+              height: auto;
               span {
                 color: black;
               }
