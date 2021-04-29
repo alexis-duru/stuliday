@@ -36,6 +36,20 @@ H2 {
   letter-spacing: 5px;
 }
 
+h3 {
+  font-size: 15px;
+  font-family: "roboto";
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+H4 {
+  font-size: 12px;
+  font-family: "roboto";
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
 p {
   color: black;
 }
@@ -51,6 +65,7 @@ header {
   text-decoration: none;
   display: flex;
   background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   justify-content: center;
 }
 header nav {
@@ -61,6 +76,7 @@ header nav {
   justify-content: space-between;
   padding: 0px 10px 0px 10px;
   background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   text-align: center;
 }
 header nav h1 {
@@ -97,25 +113,48 @@ header nav ul li:hover {
   opacity: 0.5;
 }
 
-#container-in-home {
+#header-banner {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+#header-banner #header-banner-container {
+  width: 1920px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#home-section {
   width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#home-section #container-in-home {
+  height: auto;
+  width: 68%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url("/assets/img/image/home/background-home.jpg");
   background-size: cover;
+  border-radius: 30px;
 }
-#container-in-home #home {
+#home-section #container-in-home #home {
   height: 700px;
   width: 1170px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 50px;
 }
-#container-in-home #home #container-home {
+#home-section #container-in-home #home #container-home {
   width: 50%;
   height: 30%;
   display: flex;
@@ -124,13 +163,13 @@ header nav ul li:hover {
   border: 2px solid white;
   background-image: url("/assets/img/image/home/4 copie.jpg");
   background-size: cover;
-  opacity: 1;
+  opacity: 0.9;
   border-radius: 30px;
   /*btn_background*/
   /*btn_text*/
   /*highlight*/
 }
-#container-in-home #home #container-home #buttons-welcome {
+#home-section #container-in-home #home #container-home #buttons-welcome {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -141,7 +180,7 @@ header nav ul li:hover {
   margin: 0 auto;
   /*   padding: 2em 0em; */
 }
-#container-in-home #home #container-home .container {
+#home-section #container-in-home #home #container-home .container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -151,24 +190,24 @@ header nav ul li:hover {
   width: auto;
   height: auto;
 }
-#container-in-home #home #container-home .container span {
+#home-section #container-in-home #home #container-home .container span {
   color: black;
 }
-#container-in-home #home #container-home h1 {
+#home-section #container-in-home #home #container-home h1 {
   text-align: left;
   color: #444;
   letter-spacing: 0.05em;
   margin: 0 0 0.4em;
   font-size: 1em;
 }
-#container-in-home #home #container-home p {
+#home-section #container-in-home #home #container-home p {
   text-align: left;
   color: #444;
   letter-spacing: 0.05em;
   font-size: 0.8em;
   margin: 0 0 2em;
 }
-#container-in-home #home #container-home .btn {
+#home-section #container-in-home #home #container-home .btn {
   letter-spacing: 0.1em;
   cursor: pointer;
   font-size: 14px;
@@ -180,10 +219,10 @@ header nav ul li:hover {
   text-transform: uppercase;
   width: 100%;
 }
-#container-in-home #home #container-home .btn:hover {
+#home-section #container-in-home #home #container-home .btn:hover {
   text-decoration: none;
 }
-#container-in-home #home #container-home .effect01 {
+#home-section #container-in-home #home #container-home .effect01 {
   color: #ffffff;
   border: 1px solid #fff;
   border-radius: 12px;
@@ -197,21 +236,23 @@ header nav ul li:hover {
   opacity: 0.9;
   font-size: 14px;
   font-weight: 800;
+  padding: 7px;
 }
-#container-in-home #home #container-home .effect01:hover {
-  border: 1px solid black;
-  background-color: #FFF;
+#home-section #container-in-home #home #container-home .effect01:hover {
+  border: 0.5px solid black;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   box-shadow: 0px 0px 0px 1px #EEE inset;
 }
-#container-in-home #home #container-home .effect01 span {
+#home-section #container-in-home #home #container-home .effect01 span {
   transition: all 0.2s ease-out;
   z-index: 2;
 }
-#container-in-home #home #container-home .effect01:hover span {
+#home-section #container-in-home #home #container-home .effect01:hover span {
   letter-spacing: 0.13em;
   color: #333;
 }
-#container-in-home #home #container-home .effect01:after {
+#home-section #container-in-home #home #container-home .effect01:after {
   background: #FFF;
   border: 0px solid #000;
   content: "";
@@ -222,14 +263,14 @@ header nav ul li:hover {
   top: -50px;
   -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
-  width: 50px;
+  width: 20px;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   /*easeOutCirc*/
   z-index: 1;
 }
-#container-in-home #home #container-home .effect01:hover:after {
+#home-section #container-in-home #home #container-home .effect01:hover:after {
   background: #FFF;
-  border: 20px solid #000;
+  border: 5px solid #000;
   opacity: 0;
   left: 120%;
   -webkit-transform: rotate(40deg);
@@ -242,6 +283,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 footer #container-footer {
   width: 1190px;
@@ -259,21 +301,6 @@ footer #container-footer h2 {
   letter-spacing: 2px;
 }
 
-#header-rental {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-}
-#header-rental #search-rental {
-  width: 1920px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 #rental-container {
   width: auto;
   height: auto;
@@ -285,15 +312,19 @@ footer #container-footer h2 {
 #rental-container #container-in {
   width: 68%;
   height: auto;
-  background-color: #ebe0d9;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
   border-radius: 30px;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 }
 #rental-container #container-in .rental {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: auto;
   background-color: white;
   text-align: center;
@@ -316,28 +347,84 @@ footer #container-footer h2 {
 #rental-container #container-in .rental p {
   font-size: 10px;
   font-family: "roboto";
+  margin-bottom: 10px;
+}
+#rental-container #container-in .rental .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#rental-container #container-in .rental .price :first-child {
+  font-weight: bolder;
+}
+#rental-container #container-in .rental .price h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+#rental-container #container-in .rental .price p {
+  padding-right: 4px;
+  font-size: 14px;
+}
+#rental-container #container-in .rental .price :first-child {
+  font-size: 20px;
+  font-family: "gallient";
+  letter-spacing: 3px;
+}
+#rental-container #container-in .rental #btn-details-rental {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+#rental-container #container-in .rental #btn-details-rental p {
+  border: 1px solid black;
+  font-family: "Roboto";
+  width: 30%;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+#rental-container #container-in .rental #btn-details-rental p:hover {
+  opacity: 0.7;
+}
+#rental-container #container-in .rental #etoile {
+  width: 13px;
+  height: 13px;
+}
+#rental-container #container-in .rental #etoile:hover {
+  opacity: 0.5;
 }
 
-#login-container {
-  width: 100%;
-  height: 700px;
+#login-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+#login-section #login-container {
+  width: 68%;
+  height: auto;
   background-image: url("../img/image/home/background-home.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 30px;
 }
-#login-container #login-container-in {
+#login-section #login-container #login-container-in {
   height: 700px;
   width: 1170px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: 50px;
 }
-#login-container #login-container-in #login-inscription-utilisateur {
+#login-section #login-container #login-container-in #login-inscription-utilisateur {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -349,16 +436,16 @@ footer #container-footer h2 {
   background-color: #ebe0d9;
   padding: 5px 10px 5px 10px;
 }
-#login-container #login-container-in #login-inscription-utilisateur p {
+#login-section #login-container #login-container-in #login-inscription-utilisateur p {
   font-family: "gallient";
   color: black;
 }
-#login-container #login-container-in #login-inscription-utilisateur a {
+#login-section #login-container #login-container-in #login-inscription-utilisateur a {
   text-decoration: none;
   color: white;
   font-family: "roboto";
 }
-#login-container #login-container-in #login-inscription-utilisateur a:hover {
+#login-section #login-container #login-container-in #login-inscription-utilisateur a:hover {
   text-decoration: none;
   color: black;
   font-family: "roboto";
@@ -366,7 +453,7 @@ footer #container-footer h2 {
   opacity: 1;
   transition: ease-in 0.4s;
 }
-#login-container #login-container-in #login-formulaire-container {
+#login-section #login-container #login-container-in #login-formulaire-container {
   width: 39vw;
   height: 30%;
   display: flex;
@@ -377,15 +464,16 @@ footer #container-footer h2 {
   background-size: cover;
   opacity: 1;
   border-radius: 30px;
+  opacity: 0.9;
 }
-#login-container #login-container-in #login-formulaire-container .login-sign-in {
+#login-section #login-container #login-container-in #login-formulaire-container .login-sign-in {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  width: 15vw;
+  width: 23vw;
 }
-#login-container #login-container-in #login-formulaire-container .login-sign-in .login-input-form {
+#login-section #login-container #login-container-in #login-formulaire-container .login-sign-in .login-input-form {
   font-family: "roboto";
   text-align: center;
   height: 40px;
@@ -397,7 +485,7 @@ footer #container-footer h2 {
   font-size: 20px;
   border-radius: 10px;
 }
-#login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact {
+#login-section #login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact {
   height: 40px;
   display: flex;
   justify-content: center;
@@ -412,12 +500,12 @@ footer #container-footer h2 {
   text-align: center;
   color: black;
 }
-#login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact:hover {
+#login-section #login-container #login-container-in #login-formulaire-container .login-sign-in #btn-contact:hover {
   background-color: #f7e9df;
   transition: 0.3s ease-in;
   color: black;
 }
-#login-container #login-container-in #login-formulaire-container .login-sign-in p {
+#login-section #login-container #login-container-in #login-formulaire-container .login-sign-in p {
   font-family: "gallient";
   letter-spacing: 4px;
   opacity: 1;

@@ -4,6 +4,7 @@ header {
     text-decoration: none;
     display: flex;
     background-color: $beige;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
     justify-content: center;
     nav {
         width: 80%;
@@ -12,7 +13,8 @@ header {
         display: flex;
         justify-content: space-between;
         padding: 0px 10px 0px 10px;
-        background-color: $beige;
+        background-color: #ebe0d9;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         text-align: center;
         h1 {
             display: flex;
@@ -51,5 +53,20 @@ header {
         
     }
         
+}
+
+#header-banner {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    #header-banner-container {
+        width: 1920px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
