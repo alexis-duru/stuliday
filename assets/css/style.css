@@ -70,19 +70,16 @@ header {
 }
 header nav {
   width: 80%;
-  height: auto;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px 0px 10px;
   background-color: #ebe0d9;
   background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-  text-align: center;
 }
 header nav h1 {
   display: flex;
   align-items: center;
-  height: auto;
   letter-spacing: 2px;
 }
 header nav ul {
@@ -91,7 +88,6 @@ header nav ul {
   display: flex;
   font-family: "montserrat";
   font-weight: 500;
-  justify-content: center;
   align-items: center;
 }
 header nav ul li {
@@ -117,7 +113,6 @@ header nav ul li:hover {
   width: 100%;
   height: 100px;
   display: flex;
-  justify-content: center;
 }
 #header-banner #header-banner-container {
   width: 1920px;
@@ -165,9 +160,6 @@ header nav ul li:hover {
   background-size: cover;
   opacity: 0.9;
   border-radius: 30px;
-  /*btn_background*/
-  /*btn_text*/
-  /*highlight*/
 }
 #home-section #container-in-home #home #container-home #buttons-welcome {
   display: flex;
@@ -178,7 +170,6 @@ header nav ul li:hover {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  /*   padding: 2em 0em; */
 }
 #home-section #container-in-home #home #container-home .container {
   align-items: center;
@@ -227,7 +218,6 @@ header nav ul li:hover {
   border: 1px solid #fff;
   border-radius: 12px;
   box-shadow: 0px 0px 0px 1px #fff inset;
-  /* background-color: #000; */
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease-in-out;
@@ -236,7 +226,6 @@ header nav ul li:hover {
   opacity: 0.9;
   font-size: 14px;
   font-weight: 800;
-  padding: 7px;
 }
 #home-section #container-in-home #home #container-home .effect01:hover {
   border: 0.5px solid black;
@@ -261,11 +250,9 @@ header nav ul li:hover {
   opacity: 0.8;
   position: absolute;
   top: -50px;
-  -webkit-transform: rotate(35deg);
   transform: rotate(35deg);
   width: 20px;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  /*easeOutCirc*/
   z-index: 1;
 }
 #home-section #container-in-home #home #container-home .effect01:hover:after {
@@ -273,7 +260,6 @@ header nav ul li:hover {
   border: 5px solid #000;
   opacity: 0;
   left: 120%;
-  -webkit-transform: rotate(40deg);
   transform: rotate(40deg);
 }
 
@@ -606,34 +592,6 @@ footer #container-footer div {
   color: black;
 }
 
-#profil-section {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-}
-#profil-section #container-in-profil {
-  height: auto;
-  width: 68%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ebe0d9;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-  background-size: cover;
-  border-radius: 30px;
-}
-#profil-section #container-in-profil #profil {
-  height: 700px;
-  width: 1170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 #section-rental-details {
   width: 100%;
   height: auto;
@@ -672,6 +630,7 @@ footer #container-footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
 }
 #section-rental-details #container-in-rental-details #container-in-2 > div {
   display: flex;
@@ -681,6 +640,33 @@ footer #container-footer div {
 #section-rental-details #container-in-rental-details #container-in-2 h2 {
   margin-bottom: 20px;
 }
+#section-rental-details #container-in-rental-details #container-in-2 .price {
+  display: flex;
+  width: 22%;
+}
+#section-rental-details #container-in-rental-details #container-in-2 .price :first-child {
+  font-size: 20px;
+  font-family: "gallient";
+  letter-spacing: 3px;
+}
+#section-rental-details #container-in-rental-details #container-in-2 .price :nth-child(2) {
+  font-family: "roboto";
+  text-align: center;
+  display: flex;
+  align-items: center;
+  letter-spacing: 4px;
+}
+#section-rental-details #container-in-rental-details #container-in-2 .price :nth-child(3) {
+  font-family: "roboto";
+  font-weight: 700;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+}
+#section-rental-details #container-in-rental-details #container-in-2 :nth-child(3) {
+  font-family: "roboto";
+  text-align: justify;
+}
 #section-rental-details #container-in-rental-details #container-in-2 span {
   border-bottom: 2px solid rgba(0, 0, 0, 0.178);
   width: 100%;
@@ -689,13 +675,6 @@ footer #container-footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#section-rental-details #container-in-rental-details #container-in-2 p {
-  width: 100%;
-  font-family: "roboto";
-  margin-bottom: 20px;
-  text-align: center;
-  text-align: justify;
 }
 #section-rental-details #container-in-rental-details #container-in-3 {
   width: 80%;
@@ -740,8 +719,8 @@ footer #container-footer div {
   align-items: center;
 }
 #section-rental-details #container-in-rental-details #container-in-4 H3 {
-  width: 20%;
-  height: 30px;
+  width: 30%;
+  height: 45px;
   border: 1px solid black;
   border-radius: 30px;
   background: black;

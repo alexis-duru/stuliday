@@ -13,15 +13,13 @@
         background-color: $beige;
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         border-radius: 30px;
-
-
         #container-in-1 {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        height: auto;
-        display: flex;
-        justify-content: center;
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
             img {
                 width: 60%;
                 height: auto;
@@ -36,6 +34,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-bottom: 20px;
             >div {
                 display: flex;
                 justify-content: space-between;
@@ -43,6 +42,33 @@
             }
             h2 {
                 margin-bottom: 20px;
+            }
+            .price {
+                display: flex;
+                width: 22%;
+                :first-child {
+                    font-size: 20px;
+                    font-family: "gallient";
+                    letter-spacing: 3px;
+                }
+                :nth-child(2) {
+                    font-family: 'roboto';
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 4px;
+                }
+                :nth-child(3) {
+                    font-family: "roboto";
+                    font-weight: 700;
+                    letter-spacing: 3px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            :nth-child(3) { 
+                font-family: 'roboto';
+                text-align: justify;
             }
             span {
                 border-bottom: 2px solid rgba(0, 0, 0, 0.178);
@@ -52,13 +78,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
-            p { 
-                width: 100%;
-                font-family: 'roboto';
-                margin-bottom: 20px;
-                text-align: center;
-                text-align: justify;
             }
         }
         #container-in-3 {
@@ -82,11 +101,7 @@
                 justify-content: center;
                 align-items: center;
             }
-
-
         }
-
-
         #container-in-4 {
             width: 80%;
             height: auto;
@@ -107,8 +122,8 @@
                 align-items: center;
             }
             H3 {
-                width: 20%;
-                height: 30px;
+                width: 30%;
+                height: 45px;
                 border: 1px solid black;
                 border-radius: 30px;
                 background: black;
@@ -121,8 +136,6 @@
             H3:hover {
                 opacity: 0.7;
             }
-
         }
-
     }
 }

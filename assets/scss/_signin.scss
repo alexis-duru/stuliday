@@ -7,19 +7,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    
     #signin-container-in {
         height: 700px;
-      width: 1170px;
-      // background-color: $blue2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      border-radius: 50px;
-    
-    
+        width: 1170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 50px;
         #signin-formulaire-container {
             width: 39vw;
             height: 80%;
@@ -69,7 +64,6 @@
                     transition: 0.3s ease-in;
                     color: black;
                 }
-            
                 p {
                     font-family: "gallient";
                     letter-spacing: 4px;
@@ -84,12 +78,10 @@
                 justify-content: center;
                 align-items: center;
                 justify-content: space-between;
-
                 p {
                     font-size: 12px;
                     color: black;
                 }
-                
             } 
         }
     }

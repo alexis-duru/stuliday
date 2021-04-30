@@ -15,8 +15,6 @@
         align-items: center;
         flex-direction: column;
         border-radius: 30px;
-
-        
         #login-container-in {
             height: 700px;
         width: 1170px;
@@ -37,8 +35,8 @@
             background-color: $beige;
             padding: 5px 10px 5px 10px;
             p {
-            font-family: 'gallient';
-            color: black;
+                font-family: 'gallient';
+                color: black;
             }
             a {
                 text-decoration: none;
@@ -54,7 +52,6 @@
                 transition: ease-in 0.4s;
             }
         }
-        
             #login-formulaire-container {
                 width: 39vw;
                 height: 30%;
@@ -85,7 +82,6 @@
                         font-size: 20px;
                         border-radius: 10px;
                     }
-
                     #btn-contact {
                         height: 40px;
                         display: flex;
@@ -106,7 +102,6 @@
                         transition: 0.3s ease-in;
                         color: black;
                     }
-                    
                     p {
                         font-family: "gallient";
                         letter-spacing: 4px;
