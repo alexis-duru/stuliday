@@ -1,0 +1,42 @@
+#profil-section {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    #container-in-profil {
+        height: auto;
+        width: 68%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 160px;
+        background-color: $beige;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+        background-size: cover;
+        border-radius: 30px;
+        // background-repeat: no-repeat;
+        // height: auto;
+        #profil {
+            height: 700px;
+            width: 1170px;
+            // background-color: $blue2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            // .ads-container {
+            //     width: 30%;
+            //     height: 50%;
+            //     flex-direction: column;
+            //     background-color: white;
+            //     text-align: center;
+            //     margin: 60px;
+            //     padding: 17px;
+            //     border-radius: 20px;
+            //     box-shadow: rgb(17 17 26 / 10%) 0px 8px 24px, rgb(17 17 26 / 10%) 0px 16px 56px, rgb(17 17 26 / 10%) 0px 24px 80px;
+            // }
+        }
+    }
+}

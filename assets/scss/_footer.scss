@@ -1,24 +1,28 @@
 footer {
     height: 89px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     background-color: $beige;
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
     
     #container-footer {
-        width: 1190px;
+        width: 68%;
         height: auto;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
         h2 {
-            height: 100%;
             font-size: 15px;
             font-weight: 400;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             letter-spacing: 2px;
+        }
+        p {
+            font-family: 'gallient';
+        }
+        div {
+            letter-spacing: 6px;
         }
     }
 }
