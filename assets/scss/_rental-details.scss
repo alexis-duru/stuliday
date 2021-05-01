@@ -121,7 +121,7 @@
                 justify-content: center;
                 align-items: center;
             }
-            H3 {
+            a {
                 width: 30%;
                 height: 45px;
                 border: 1px solid black;
@@ -132,8 +132,12 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                font-size:15px;
+                font-family: 'roboto';
+                margin-bottom: 10px;
+                font-weight: bold;
             }
-            H3:hover {
+            a:hover {
                 opacity: 0.7;
             }
         }

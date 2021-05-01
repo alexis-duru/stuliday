@@ -7,14 +7,6 @@
   src: url("../font/gallientregular.ttf");
 }
 @font-face {
-  font-family: "niguella";
-  src: url("../font/Niguella.ttf");
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-Regular.ttf");
-}
-@font-face {
   font-family: "Roboto";
   src: url("../font/Roboto-Regular.ttf");
 }
@@ -718,7 +710,7 @@ footer #container-footer div {
   justify-content: center;
   align-items: center;
 }
-#section-rental-details #container-in-rental-details #container-in-4 H3 {
+#section-rental-details #container-in-rental-details #container-in-4 a {
   width: 30%;
   height: 45px;
   border: 1px solid black;
@@ -729,9 +721,158 @@ footer #container-footer div {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  font-family: "roboto";
+  margin-bottom: 10px;
+  font-weight: bold;
 }
-#section-rental-details #container-in-rental-details #container-in-4 H3:hover {
+#section-rental-details #container-in-rental-details #container-in-4 a:hover {
   opacity: 0.7;
+}
+
+#section-profil-details {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#section-profil-details #section-profil-details-container {
+  width: 68%;
+  height: auto;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  border-radius: 30px;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details {
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  justify-content: center;
+  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 30px;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details img {
+  width: 80%;
+  height: auto;
+  border-radius: 20px;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details h3 {
+  font-size: 20px;
+  margin: 10px;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details > div a {
+  font-family: "roboto";
+  color: #ebe0d9;
+  padding: 5px 20px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details > div a:hover {
+  opacity: 0.8;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details > div .btn-edit {
+  background-color: black;
+  border-radius: 15px;
+  width: 40px;
+  height: auto;
+  margin: 10px;
+}
+#section-profil-details #section-profil-details-container #container-rental-item-details .rental-item-details > div .btn-delete {
+  background-color: black;
+  border-radius: 15px;
+  width: 40px;
+  height: auto;
+  margin: 10px;
+}
+
+#section-profil {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#section-profil #section-profil-container {
+  width: 68%;
+  height: auto;
+  border-radius: 30px;
+}
+#section-profil #section-profil-container #container-rental-item {
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  justify-content: center;
+  grid-gap: 30px;
+  display: flex;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item {
+  width: 100%;
+  height: 445px;
+  background-image: url("/assets/img/image/home/background-home.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  padding: 30px;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item > div a {
+  font-family: "roboto";
+  color: #ebe0d9;
+  padding: 5px 20px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item > div a:hover {
+  opacity: 0.8;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item > div .btn-manage {
+  background-color: black;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+}
+#section-profil #section-profil-container #container-rental-item .rental-item > div .btn-addnew {
+  background-color: black;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
