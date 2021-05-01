@@ -129,7 +129,7 @@ header nav ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/img/image/home/background-home.jpg");
+  background-image: url("../img/image/home/background-home.png");
   background-size: cover;
   border-radius: 30px;
 }
@@ -148,7 +148,7 @@ header nav ul li:hover {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  background-image: url("/assets/img/image/home/4 copie.jpg");
+  background-image: url("../img/image/home/4copie.jpg");
   background-size: cover;
   opacity: 0.9;
   border-radius: 30px;
@@ -389,7 +389,7 @@ footer #container-footer div {
 #login-section #login-container {
   width: 68%;
   height: auto;
-  background-image: url("../img/image/home/background-home.jpg");
+  background-image: url("../img/image/home/background-home.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -441,7 +441,7 @@ footer #container-footer div {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  background-image: url("/assets/img/image/home/4 copie.jpg");
+  background-image: url("../img/image/home/4copie.jpg");
   background-size: cover;
   opacity: 1;
   border-radius: 30px;
@@ -498,7 +498,7 @@ footer #container-footer div {
 #signin-container {
   width: 100%;
   height: 700px;
-  background-image: url("../img/image/home/background-home.jpg");
+  background-image: url("../img/image/home/background-home.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -521,7 +521,7 @@ footer #container-footer div {
   justify-content: center;
   align-items: center;
   border: 2px solid white;
-  background-image: url("/assets/img/image/home/4 copie.jpg");
+  background-image: url("../img/image/home/4copie.jpg");
   background-size: cover;
   opacity: 1;
   border-radius: 30px;
@@ -830,7 +830,7 @@ footer #container-footer div {
 #section-profil #section-profil-container #container-rental-item .rental-item {
   width: 100%;
   height: 445px;
-  background-image: url("/assets/img/image/home/background-home.jpg");
+  background-image: url("../img/image/home/background-home.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -920,11 +920,13 @@ footer #container-footer div {
   font-family: "Roboto";
   margin-top: 10px;
   font-weight: bold;
+  border-radius: 30px
 }
 #section-addnew #section-addnew-container #container-addnew-item form input, #section-addnew #section-addnew-container #container-addnew-item form select, #section-addnew #section-addnew-container #container-addnew-item form textarea, #section-addnew #section-addnew-container #container-addnew-item form h3 {
   padding: 10px;
   margin-bottom: 10px;
   text-align: center;
+  border-radius: 30px
 }
 #section-addnew #section-addnew-container #container-addnew-item > div {
   width: auto;

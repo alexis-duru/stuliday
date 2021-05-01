@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3">
-    <link href="Assets/css/style.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icones/stuliday-fav.png">
-    <title>STULIDAY</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <h1>
-                <a href='index.html'>STULIDAY</a>
-            </h1>
-            <ul>
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="rental.html">RENTAL</a>
-                </li>
-                <li>
-                    <a href="profil.html">PROFIL</a>
-                </li>
-                <li>
-                    <a href="login.html">SIGN IN / SIGN UP</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<?php require 'inc/header.php' ?>
 
     <section id="header-banner">
         <div id="header-banner-container">
@@ -41,6 +7,7 @@
             </div>
         </div>
     </section>
+    
     <section id="section-addnew">
         <div id="section-addnew-container">
             <div id="container-addnew-item">
@@ -65,7 +32,7 @@
                     <input type="text" name="name" value="" placeholder="Name of your city">
                     <input type="text" name="name" value="" placeholder="Postal code">
                     <div id="date-select">
-                        <h3>DATE OF : </h3>
+                        <h3>DATE OF</h3>
                         <input type="date" id="start" name="trip-start" value="2021-05-01" placeholder="availabilities">
                         <h3>TO</h3>
                         <input type="date" id="end" name="trip-end" value="2021-05-01" placeholder="availabilities">
@@ -82,21 +49,6 @@
         </div>
         </div>
     </section>
-    <footer>
-        <div id="container-footer">
-            <p>ALEXIS DURU</p>
-            <h2>© STULIDAY 2021</h2>
-            <div>
-                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="http://gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-            </div>
-        </div>
-    </footer>
 
-    <script src="assets/lib/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+    <?php require 'inc/footer.php' ?>
+    
