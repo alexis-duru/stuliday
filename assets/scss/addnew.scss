@@ -1,0 +1,85 @@
+#section-addnew {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    #section-addnew-container {
+        width: 68%;
+        height: auto;
+        background-color: $beige;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+        border-radius: 30px;
+        #container-addnew-item {
+            width: 80%;
+            height: auto;
+            margin: 30px auto;
+            grid-gap: 30px;
+            align-items: center;
+            background-color: white;
+            background-color: $beige;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            form {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                border-radius: 30px;
+                text-align: center;
+                h3 {
+                    font-size: 20px;
+                    font-family: 'roboto';
+                    margin-bottom: 10px;
+                }
+                #gpe-square-meter {
+                    display: flex;
+                }
+                input, p {
+                    font-family: 'Roboto';
+                    margin-top: 10px;
+                    font-weight: bold;
+                }
+                input, select, textarea, h3 {
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+            }
+            >div {
+                width: auto;
+                display: flex;
+                justify-content: space-around;
+                a {
+                    font-family: 'roboto';
+                    color: $beige;
+                    padding: 5px 20px;
+                    font-size: 15px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                a:hover {
+                    opacity: 0.8;
+                }
+                .btn-create {
+                    background-color: black;
+                    border-radius: 15px;
+                    width: 80px;
+                    height: 30px;
+                    margin: 10px;
+
+                }
+                .btn-return {
+                    background-color: black;
+                    border-radius: 15px;
+                    width: 80px;
+                    height: 30px;
+                    margin: 10px;
+
+                }
+            }
+        }
+    }
+}

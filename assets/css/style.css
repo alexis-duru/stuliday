@@ -875,4 +875,88 @@ footer #container-footer div {
   margin: 10px;
 }
 
+#section-addnew {
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#section-addnew #section-addnew-container {
+  width: 68%;
+  height: auto;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  border-radius: 30px;
+}
+#section-addnew #section-addnew-container #container-addnew-item {
+  width: 80%;
+  height: auto;
+  margin: 30px auto;
+  grid-gap: 30px;
+  align-items: center;
+  background-color: white;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+#section-addnew #section-addnew-container #container-addnew-item form {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  text-align: center;
+}
+#section-addnew #section-addnew-container #container-addnew-item form h3 {
+  font-size: 20px;
+  font-family: "roboto";
+  margin-bottom: 10px;
+}
+#section-addnew #section-addnew-container #container-addnew-item form #gpe-square-meter {
+  display: flex;
+}
+#section-addnew #section-addnew-container #container-addnew-item form input, #section-addnew #section-addnew-container #container-addnew-item form p {
+  font-family: "Roboto";
+  margin-top: 10px;
+  font-weight: bold;
+}
+#section-addnew #section-addnew-container #container-addnew-item form input, #section-addnew #section-addnew-container #container-addnew-item form select, #section-addnew #section-addnew-container #container-addnew-item form textarea, #section-addnew #section-addnew-container #container-addnew-item form h3 {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#section-addnew #section-addnew-container #container-addnew-item > div {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+#section-addnew #section-addnew-container #container-addnew-item > div a {
+  font-family: "roboto";
+  color: #ebe0d9;
+  padding: 5px 20px;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-addnew #section-addnew-container #container-addnew-item > div a:hover {
+  opacity: 0.8;
+}
+#section-addnew #section-addnew-container #container-addnew-item > div .btn-create {
+  background-color: black;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+}
+#section-addnew #section-addnew-container #container-addnew-item > div .btn-return {
+  background-color: black;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */

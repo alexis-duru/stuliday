@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3">
+    <link href="Assets/css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icones/stuliday-fav.png">
+    <title>STULIDAY</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <a href='index.html'>STULIDAY</a>
+            </h1>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="rental.html">RENTAL</a>
+                </li>
+                <li>
+                    <a href="profil.html">PROFIL</a>
+                </li>
+                <li>
+                    <a href="login.html">SIGN IN / SIGN UP</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="header-banner">
+        <div id="header-banner-container">
+            <div>
+                <h2>ADD NEW</h2>
+            </div>
+        </div>
+    </section>
+    <section id="section-addnew">
+        <div id="section-addnew-container">
+            <div id="container-addnew-item">
+                <form action="admin-create-post/php" method="post" runat='server'>
+                    <h3>DETAILS OF YOUR RENTAL</h3>
+                    <input type="text" name="name" value="" placeholder="Name of your rental">
+                    <h3>PHOTO OF YOUR RENTAL</h3>
+                    <input type="file" id=''>
+                    <h3>DESCRIBE YOUR RENTAL</h3>
+                    <textarea rows="5" id="description" value="" placeholder="Describe your rental"
+                        name="description"></textarea>
+                    <h3>LOCATION</h3>
+                    <select>
+                        <label for="country-select">Choose your country</label>
+                        <option value="">--Please choose a country--</option>
+                        <option value="dog">France</option>
+                        <option value="cat">Poland</option>
+                        <option value="hamster">Serbia</option>
+                        <option value="parrot">Luxembourg</option>
+                        <option value="spider">Portugal</option>
+                    </select>
+                    <input type="text" name="name" value="" placeholder="Name of your city">
+                    <input type="text" name="name" value="" placeholder="Postal code">
+                    <div id="date-select">
+                        <h3>DATE OF : </h3>
+                        <input type="date" id="start" name="trip-start" value="2021-05-01" placeholder="availabilities">
+                        <h3>TO</h3>
+                        <input type="date" id="end" name="trip-end" value="2021-05-01" placeholder="availabilities">
+                    </div>
+                    <h3>SQUARE METER</h3>
+                    <input type="number" id="square-meter" name="square-meter" placeholder="square meter">
+                </form>
+                <div>
+                    <a class="btn-create" href="#">CREATE</a>
+                    <a class="btn-return" href="#">RETURN</a>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div id="container-footer">
+            <p>ALEXIS DURU</p>
+            <h2>© STULIDAY 2021</h2>
+            <div>
+                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/lib/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
