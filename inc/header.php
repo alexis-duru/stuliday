@@ -30,7 +30,7 @@
                     <a href="profil.php">PROFIL</a>
                 </li>
                 <li>
-                    <a href="login.php">SIGN IN / SIGN UP</a>
+                        <a href="login.php">SIGN IN / SIGN UP</a>
                 </li>
             </ul>
         </nav>

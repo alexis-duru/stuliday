@@ -37,7 +37,7 @@
                         <p>Accept the <a id="cgu-link" href='#'>terms and conditions</a></p>
                     </div>
                     <div id="btn-contact">
-                        <a href="index.php">REGISTER NOW</a>
+                        <button class="submit-btn" type="submit" href="index.php">REGISTER NOW</button>
                     </div>
                 </form>
             </div>
