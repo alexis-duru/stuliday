@@ -26,12 +26,18 @@
                 <li>
                     <a href="rental.php">RENTAL</a>
                 </li>
+                <?php if(!empty($_SESSION['username'])) { ?>
                 <li>
                     <a href="profil.php">PROFIL</a>
                 </li>
                 <li>
+                    <a href="?logout">DISCONNECT</a>
+                </li>
+                <?php }else{ ?>
+                <li>
                         <a href="login.php">SIGN IN / SIGN UP</a>
                 </li>
+                <?php } ?>
             </ul>
         </nav>
     </header>

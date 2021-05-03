@@ -47,8 +47,6 @@ if (!empty($_POST['email_signup']) && !empty($_POST['password1_signup']) && !emp
 }
 ?>
 
-
-
     <section id="header-banner">
         <div id="header-banner-container">
             <div>
