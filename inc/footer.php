@@ -1,4 +1,3 @@
-<?php require 'inc/config.php'; ?>
 
 <footer>
         <div id="container-footer">

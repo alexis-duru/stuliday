@@ -2,13 +2,17 @@
 <?php
 $alert = false;
 
+//? Etape 1 : Vérification du remplissage du formulaire
 if (!empty($_POST['email_login']) && !empty($_POST['password_login']) && isset($_POST['submit_login'])) {
+    //? Etape 2 : Initialisation des variables + assainissement via htmlspecialchars
     $email = htmlspecialchars($_POST['email_login']);
     $password = htmlspecialchars($_POST['password_login']);
+    // var_dump($password);
     try {
         $sqlMail = "SELECT * FROM users WHERE email = '{$email}'";
         $resultMail = $connect->query($sqlMail);
         $user = $resultMail->fetch(PDO::FETCH_ASSOC);
+        // var_dump($user);
         if ($user) {
             $dbpassword = $user['password'];
             if (password_verify($password, $dbpassword)) {
@@ -38,11 +42,26 @@ if (!empty($_POST['email_login']) && !empty($_POST['password_login']) && isset($
     }
 }
 
+/**
+ * ! Etapes logiques de la connexion :
+ * 
+ * TODO : Vérif intro
+ * 
+ * TODO : Vérification de l'email
+ * 
+ * TODO : Vérification du mot de passe associé à l'email
+ * 
+ * TODO : Connexion via création d'une session
+ * 
+ * TODO : Messages d'erreur
+ */
+
 ?>
     <section id="header-banner">
         <div id="header-banner-container">
             <div>
                 <h2>SIGN UP</h2>
+    
             </div>
         </div>
     </section>
@@ -52,6 +71,7 @@ if (!empty($_POST['email_login']) && !empty($_POST['password_login']) && isset($
             <div id="login-container-in">
                 <div id="login-formulaire-container">
 
+<!-- //? Système d'alerte qui dépend de 3 variables, $alert pour s'afficher, $type pour le choix de la couleur, $message pour le contenu du message d'alerte -->
                 <?php echo $alert ? "<div class='alert alert-{$type} mt-2'>{$message}</div>" : ''; ?>
                     <form action="#" method="POST" class="login-sign-in">
                         <div id="box-formulaire">
