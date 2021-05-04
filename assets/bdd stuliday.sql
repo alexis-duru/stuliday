@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 03, 2021 at 02:09 PM
+-- Generation Time: May 04, 2021 at 11:15 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -35,6 +35,14 @@ CREATE TABLE `categories` (
   `categories_name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`categories_id`, `categories_name`) VALUES
+(1, 'Home'),
+(2, 'Appartment');
+
 -- --------------------------------------------------------
 
 --
@@ -50,7 +58,7 @@ CREATE TABLE `rental` (
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `author` int(11) NOT NULL,
   `rental_category` int(11) NOT NULL,
-  `square_meter` int(10) NOT NULL
+  `square_meter` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -91,7 +99,8 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `rental`
   ADD PRIMARY KEY (`rental_id`),
-  ADD KEY `fk_author_users` (`author`);
+  ADD KEY `fk_author_users` (`author`),
+  ADD KEY `fk_categories_category` (`rental_category`);
 
 --
 -- Indexes for table `users`
@@ -109,7 +118,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `rental`
@@ -131,7 +140,8 @@ ALTER TABLE `users`
 -- Constraints for table `rental`
 --
 ALTER TABLE `rental`
-  ADD CONSTRAINT `fk_author_users` FOREIGN KEY (`author`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `fk_author_users` FOREIGN KEY (`author`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `fk_categories_category` FOREIGN KEY (`rental_category`) REFERENCES `categories` (`categories_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
