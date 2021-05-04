@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 04, 2021 at 11:15 AM
+-- Generation Time: May 04, 2021 at 01:35 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -46,10 +46,10 @@ INSERT INTO `categories` (`categories_id`, `categories_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rental`
+-- Table structure for table `rentals`
 --
 
-CREATE TABLE `rental` (
+CREATE TABLE `rentals` (
   `rental_id` int(11) NOT NULL,
   `rental_name` varchar(255) NOT NULL,
   `rental_description` text NOT NULL,
@@ -60,6 +60,15 @@ CREATE TABLE `rental` (
   `rental_category` int(11) NOT NULL,
   `square_meter` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `rentals`
+--
+
+INSERT INTO `rentals` (`rental_id`, `rental_name`, `rental_description`, `rental_price`, `rental_adress`, `created_at`, `author`, `rental_category`, `square_meter`) VALUES
+(6, 'Apartment close to ocean', 'Apartment close to ocean', 250, 'BIARRITZ', '2021-05-04 13:39:48', 1, 2, 250),
+(7, 'Home in the campaign', 'Home in the campaign with a beautiful garden', 300, 'Monstalie', '2021-05-04 13:43:50', 1, 1, 125),
+(8, 'Apartment in the center of Paris', 'Apartment in the center of Paris, close montparnasse.', 400, 'Paris', '2021-05-04 13:45:21', 1, 2, 200);
 
 -- --------------------------------------------------------
 
@@ -95,11 +104,11 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`categories_id`);
 
 --
--- Indexes for table `rental`
+-- Indexes for table `rentals`
 --
-ALTER TABLE `rental`
+ALTER TABLE `rentals`
   ADD PRIMARY KEY (`rental_id`),
-  ADD KEY `fk_author_users` (`author`),
+  ADD KEY `author` (`author`),
   ADD KEY `fk_categories_category` (`rental_category`);
 
 --
@@ -121,10 +130,10 @@ ALTER TABLE `categories`
   MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `rental`
+-- AUTO_INCREMENT for table `rentals`
 --
-ALTER TABLE `rental`
-  MODIFY `rental_id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `rentals`
+  MODIFY `rental_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -137,10 +146,10 @@ ALTER TABLE `users`
 --
 
 --
--- Constraints for table `rental`
+-- Constraints for table `rentals`
 --
-ALTER TABLE `rental`
-  ADD CONSTRAINT `fk_author_users` FOREIGN KEY (`author`) REFERENCES `users` (`id`) ON DELETE CASCADE,
+ALTER TABLE `rentals`
+  ADD CONSTRAINT `author` FOREIGN KEY (`author`) REFERENCES `users` (`id`),
   ADD CONSTRAINT `fk_categories_category` FOREIGN KEY (`rental_category`) REFERENCES `categories` (`categories_id`);
 COMMIT;
 
