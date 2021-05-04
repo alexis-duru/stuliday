@@ -1,4 +1,20 @@
-<?php require 'inc/header.php' ?>
+<?php require 'inc/header.php';
+// $title = 'Rental - Le Chouette Coin';
+
+
+// $sql = 'SELECT * FROM categories';
+// $res = $conn->query($sql);
+// $categories = $res->fetchAll();
+
+// if (isset($_POST['search_form'])) {
+//     $category = intval(strip_tags($_POST['rental_category']));
+//     $search_text = strip_tags($_POST['search_text']);
+
+//     $sql2 = "SELECT * FROM rentals WHERE rental_category LIKE '%{$category}%' AND rental_name LIKE '%{$search_text}%'";
+//     $res2 = $conn->query($sql2);
+//     $search = $res2->fetchAll();
+// }
+?>
 
 
     <section id="header-banner">
@@ -35,7 +51,9 @@
                     </div>
                 </div>
 
-                
+
+
+
                 <div class="rental">
                     <img src="assets/img/image/home/3.jpg">
                     <div>

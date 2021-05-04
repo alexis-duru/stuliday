@@ -1,9 +1,11 @@
-<?php require 'inc/header.php' ?>
+<?php require 'inc/header.php';
+
+?>
 
     <section id="header-banner">
         <div id="header-banner-container">
             <div>
-                <h2>MY PROFIL</h2>
+                <h2>BIENVENUE<?php echo $user['username']; ?></h2>
             </div>
         </div>
     </section>
@@ -13,6 +15,7 @@
             <div id="container-rental-item">
                 <div class="rental-item">
                     <div>
+                        
                         <a class="btn-manage" href="manage.php">MANAGE</a>
                         <a class="btn-addnew" href="addnew.php">ADD NEW</a>
                     </div>
