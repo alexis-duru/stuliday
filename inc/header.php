@@ -28,15 +28,18 @@
                 </li>
                 <?php if(!empty($_SESSION['username'])) { ?>
                 <li>
-                    <a href="profil.php">PROFIL</a>
+                    <a href="profil.php">PROFIL <i class="fas fa-user-circle"></i>
+                </li></a>
+                    <!-- <i class="fas fa-user-circle"></i> -->
+                </li>
                 </li>
                 <li>
                     <a href="?logout">DISCONNECT</a>
                 </li>
                 <?php }else{ ?>
                 <li>
-                        <a href="login.php">SIGN IN / SIGN UP</a>
-                </li>
+                        <a href="login.php">SIGN IN / SIGN UP <i class="fas fa-user-circle"></i>
+                </li></a>
                 <?php } ?>
             </ul>
         </nav>

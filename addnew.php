@@ -26,11 +26,15 @@ $categories = $connect->query($sqlCategory)->fetchAll();
  */
 
 //? Etape 1 : Vérification de la validité du formulaire et de l'appui sur le bouton envoi
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
 
-if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_POST['rental_price']) && !empty($_POST['rental_description']) && !empty($_POST['rental_category']) && !empty($_POST['square_meter']) && !empty($_POST['rental_adress'])) {
+// echo '<pre>';
+// var_dump($categories);
+// echo '</pre>';
+// echo '<pre>';
+// var_dump($_POST);
+// echo '</pre>';
+
+if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_POST['rental_price']) && !empty($_POST['rental_description']) && !empty($_POST['rental_category']) && !empty($_POST['square_meter']) && !empty($_POST['rental_adress']) && !empty($_POST['author'])) {
 
      //? Etape 2 : Initialisation des variables & assainissement (via strip_tags cette fois)
 
@@ -39,8 +43,9 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
     $description = strip_tags($_POST['rental_description']);
     $price = intval(strip_tags($_POST['rental_price']));
     $adress = strip_tags($_POST['rental_adress']);
-    $category = intval(strip_tags($_POST['rental_category']));
+    $category = strip_tags($_POST['rental_category']);
     $squaremeter = intval(strip_tags($_POST['square_meter']));
+    $author = strip_tags($_POST['author']);
     $user_id = $_SESSION['id'];
 
     //? Etape 3 : Vérification du prix positif : Vérifier que le prix est un chiffre entier, que ce prix est supérieur à 0
@@ -52,7 +57,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
             $sth = $connect->prepare("INSERT INTO rental
             (rental_name,rental_description,rental_price, rental_adress, author, rental_category, square_meter)
             VALUES
-            (:rental_name,:rental_description,:rental_price, :rental_adress,:author, :rental_category, :square_meter)");
+            (:rental_name,:rental_description,:rental_price, :rental_adress, :rental_category, :square_meter, :author)");
 
                 //? J'affecte chacun des paramètres nommés à leur valeur via un bindValue. Cette opération me protège des injections SQL (en + de l'assainissement des variables)
             $sth->bindValue(':rental_name', $name);
@@ -61,7 +66,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
             $sth->bindValue(':rental_adress', $adress);
             $sth->bindValue(':rental_category', $category);
             $sth->bindValue(':square_meter', $squaremeter);
-            $sth->bindValue(':author', $user_id);
+            $sth->bindValue(':author', $author);
 
             //? J'exécute ma requête SQL d'insertion avec execute()
 
@@ -70,7 +75,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
         
              //? Je redirige vers la page des produits.
 
-            header('Location: rental.php');
+            header('Location: products.php');
         } catch (PDOException $error) {
             echo 'Erreur: ' . $error->getMessage();
         }
@@ -89,7 +94,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
     
     <section id="section-addnew">
         <div id="section-addnew-container">
-            <div id="container-addnewgit ad-item">
+            <div id="container-addnew-item">
                 <form action="#" method="post">
                     <h3>DETAILS OF YOUR RENTAL</h3>
                     <input type="text" name="rental_name" value="" placeholder="Name of your rental">

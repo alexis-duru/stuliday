@@ -1,6 +1,6 @@
 <?php require 'inc/header.php' ?>
 <?php
-var_dump($_POST);
+// var_dump($_POST);
 if (!empty($_POST['email_signup']) && !empty($_POST['password1_signup']) && !empty($_POST['password2_signup']) && !empty($_POST['username_signup']) &&  isset($_POST['submit_signup'])) {
     $email = htmlspecialchars($_POST['email_signup']);
     $password1 = htmlspecialchars($_POST['password1_signup']);
@@ -130,4 +130,5 @@ if (!empty($_POST['email_signup']) && !empty($_POST['password1_signup']) && !emp
             </div>
         </div>
     </section>
+
     <?php require 'inc/footer.php' ?>
