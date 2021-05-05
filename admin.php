@@ -9,7 +9,20 @@ if (!empty($_SESSION)) {
         $sqlUsers = "SELECT * FROM users WHERE id != '{$admin_id}'";
         $users = $connect->query($sqlUsers)->fetchAll(PDO::FETCH_ASSOC);
 ?>
-<section>
+
+
+<section id="header-banner">
+        <div id="header-banner-container">
+            <div>
+                <h2>ADMIN AREA</h2>
+            </div>
+        </div>
+    </section>
+
+
+<section class="admin-section">
+        <div id="admin-container">
+        <h3>USER ACCOUNT</H3>
             <table class="table-admin">
                 <thead>
                     <tr>
@@ -34,9 +47,9 @@ if (!empty($_SESSION)) {
                             <td>Modifier</td>
                             <td>
                                 <form action="delete.php" method="post">
-                                    <input type="hidden" name="csrf_token" value="<?php echo $token; ?>">
-                                    <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
-                                    <input type="submit" value="delete" name="delete">
+                                    <input class="input-delete" type="hidden" name="csrf_token" value="<?php echo $token; ?>">
+                                    <input class="input-delete" type="hidden" name="id" value="<?php echo $user['id'] ?>">
+                                    <input class="input-delete" type="submit" value="delete" name="delete">
                                 </form>
                             </td>
                         </tr>
@@ -45,6 +58,7 @@ if (!empty($_SESSION)) {
                     ?>
                 </tbody>
             </table>
+        </div>
             
 </section>
 

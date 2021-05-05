@@ -24,17 +24,20 @@ if (!empty($_SESSION)) {
             <div id="container-rental-item">
                 <div class="rental-item">
                     <div>
-                        <a type="button" class="btn-manage" href="manage.php">MANAGE</a>
+                        <a type="button" class="btn-profil" href="manage.php">MANAGE</a>
                     </div>
                     <div>
-                    <a class="btn-addnew" href="addnew.php">ADD NEW</a>
-                    <div class="open-admin">
+                    <a class="btn-profil" href="addnew.php">ADD NEW</a>
+                    </div>
+                    <div>
+                    <div class="btn-profil">
+
                     <?php
                     if ($user['role'] === 'ROLE_ADMIN') {
                         echo '<a href="admin.php"> ACCESS OF ADMINISTRATOR AREA  </a>';
                     }
                     ?>
-                    </div>
+                    <div>
                     </div>
                 </div>
             </div>

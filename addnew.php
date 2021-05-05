@@ -30,12 +30,12 @@ $categories = $connect->query($sqlCategory)->fetchAll();
 // echo '<pre>';
 // var_dump($categories);
 // echo '</pre>';
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($_POST);
+// echo '</pre>';
 
 if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_POST['rental_price']) && !empty($_POST['rental_description']) && !empty($_POST['rental_category']) && !empty($_POST['square_meter']) && !empty($_POST['rental_adress'])) {
-    var_dump("it's ok ❤");
+    // var_dump("it's ok ❤");
 
      //? Etape 2 : Initialisation des variables & assainissement (via strip_tags cette fois)
 
@@ -98,12 +98,14 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
             <div id="container-addnew-item">
                 <form action="#" method="post">
                     <h3>DETAILS OF YOUR RENTAL</h3>
-                    <input type="text" name="rental_name" value="" placeholder="Name of your rental">
+                    <input class="input-form" type="text" name="rental_name" value="" placeholder="Name of your rental">
                     <h3>PHOTO OF YOUR RENTAL</h3>
-                    <input type="file" id=''>
+                    <div class="input-form">
+                    <input type="file" id='file'>
+                    </div>
                     <h3>DESCRIBE YOUR RENTAL</h3>
-                    <select name="rental_category">
-                        <label for="category-select">Choose your rental</label>
+                    <select class="input-form" name="rental_category">
+                        <label class="input-form" for="category-select">Choose your rental</label>
                         <option value="">--Please choose your rental--</option>
                         <?php
                         foreach ($categories as $category) {
@@ -116,14 +118,14 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                         ?>
                         <!-- <option value="category">Home</option>
                         <option value="category">Apartment</option> -->
-                    <textarea rows="5" id="description" value="" placeholder="Describe your rental"
+                    <textarea class="input-form" rows="5" id="description" value="" placeholder="Details"
                         name="rental_description"></textarea>
                     <h3>PRICE</h3>
-                    <input type="text" name="rental_price" value="" placeholder="Price (euros)" required>
+                    <input class="input-form" type="text" name="rental_price" value="" placeholder="Price (euros)" required>
                     <h3>LOCATION</h3>
-                    <input type="text" name="rental_adress" value="" placeholder="Adress">
+                    <input class="input-form" type="text" name="rental_adress" value="" placeholder="Adress">
                     <h3>SQUARE METER</h3>
-                    <input type="number" id="square-meter" name="square_meter" placeholder="square meter">
+                    <input class="input-form" type="number" id="square-meter" name="square_meter" placeholder="square meter">
                 <div>
                     <button class="btn-create" name="rental_submit" type="submit">CREATE</button>
                     <a class="btn-return" href="profil.php">RETURN</a>

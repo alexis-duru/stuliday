@@ -43,7 +43,7 @@ $rentals = $connect->query($sqlRentals)->fetch(PDO::FETCH_ASSOC);
             
             <div id="container-in-4">
                 <span></span>
-                <a href="#">BOOK</a>
+                <button>BOOK</button>
             </div>
             <span></span>
                 <p>Published on: <?php echo $rentals['created_at']; ?>

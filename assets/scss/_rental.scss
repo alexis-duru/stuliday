@@ -67,9 +67,10 @@
                 }
                 #btn-details-rental {
                     display: flex;
-                    justify-content: center;
+                    justify-content: space-around;
                     width: auto;
                     height: auto;
+
                     p {
                         border: 1px solid black;
                         font-family: 'Roboto';

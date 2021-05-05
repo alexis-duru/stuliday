@@ -28,12 +28,9 @@
                 justify-content: space-around;
                 border-radius: 20px;
                 padding: 30px;
-                .open-admin {
-                    background-color: black;
-                    height: 30px;
-                    border-radius: 30px;
-                    font-size: 8px;
-                    // font-style: italic;
+                :nth-child(3) {
+                    font-size: 11px;
+                    font-style: italic;
                 }
                 >div {
                     width: 100%;
@@ -42,36 +39,32 @@
                     flex-direction: column;
                     align-items: center;
                     a {
-                        font-family: 'roboto';
-                        color: $beige;
-                        padding: 5px 20px;
-                        font-size: 15px;
+                        // font-family: 'roboto';
+                        // color: $beige;
+                        // padding: 5px 20px;
+                        // font-size: 15px;
+                        // text-align: center;
+                        // display: flex;
+                        // justify-content: center;
+                        // display: flex;
+                        // align-items: center;
+                    }
+                    
+                    .btn-profil {
+                        border: 1px solid black;
+                        font-family: "Roboto";
+                        width: 30%;
+                        padding: 10px;
+                        border-radius: 20px;
+                        color: black;
+                        background-color: #ebe0d9;
+                        background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
                         text-align: center;
-                        display: flex;
-                        justify-content: center;
-                        display: flex;
-                        align-items: center;
                     }
-                    a:hover {
+                    .btn-profil:hover {
                         opacity: 0.8;
-                    }
-
-                    button:hover {
-                        opacity: 0.8;
-                    }
-                    .btn-manage {
-                        background-color: black;
-                        border-radius: 15px;
-                        width: 80px;
-                        height: 30px;
-                        margin: 10px;
-                    }
-                    .btn-addnew {
-                        background-color: black;
-                        border-radius: 15px;
-                        width: 80px;
-                        height: 30px;
-                        margin: 10px;
+                        animation: fade-in;
+                        animation-duration: 2sec;
 
                     }
                 }

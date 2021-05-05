@@ -27,6 +27,23 @@
                 flex-direction: column;
                 border-radius: 30px;
                 text-align: center;
+                .input-form {
+                    border-radius: 30px;
+                    border: 2px solid black;
+                    font-family: 'roboto';
+                    background-color: white;
+                    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+                    outline: none;
+
+                }
+                #file {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 30%;
+
+                }
                 h3 {
                     font-size: 20px;
                     font-family: 'roboto';

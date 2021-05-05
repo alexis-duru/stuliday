@@ -10,6 +10,7 @@
     <link href="Assets/css/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icones/stuliday-fav.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>STULIDAY</title>
 </head>
 
@@ -34,7 +35,7 @@
                 </li>
                 </li>
                 <li>
-                    <a href="?logout">DISCONNECT</a>
+                    <a href="?logout">DISCONNECT <i class="fas fa-power-off"></i></a>
                 </li>
                 <?php }else{ ?>
                 <li>

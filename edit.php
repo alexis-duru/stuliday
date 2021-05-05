@@ -70,7 +70,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                 <div>
                     <label for="InputCategory">Catégorie de l'article</label>
                     <select id="InputCategory" name="rental_category" required>
-                        <!-- <option value="<?php echo $rentals['category']; ?>"><?php echo $rentals['rental_name']; ?></option> -->
+                        <?php echo $rentals['category']; ?>"><?php echo $rentals['rental_name']; ?>
                         <?php
                         //? On va boucler sur l'array categories, de façon à ce que chaque ligne de la boucle corresponde à une variable $category et aussi à une ligne de la BDD.
                         foreach ($categories as $category) {

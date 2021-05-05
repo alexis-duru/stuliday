@@ -142,4 +142,18 @@
             }
         }
     }
+    button {
+        border: 1px solid black;
+        font-family: 'Roboto';
+        width: 30%;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        background-color: black;
+    }
+    button:hover {
+        background-color: $beige;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+        color: black;
+    }
 }

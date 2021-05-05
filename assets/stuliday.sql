@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 04, 2021 at 01:35 PM
+-- Generation Time: May 05, 2021 at 02:14 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -89,9 +89,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`) VALUES
-(1, 'alexis', 'alexis@alexis.com', '$2y$10$OfEKZ8r6qLMhaunMkWdtH.XrKKLrKrtmX4LyocB5n5FCZd.7PJvGW', 'ROLE_USER'),
-(2, 'admin', 'admin@admin.com', '$2y$10$Pe7tPtgeWxcewV4P5t8W5ukPEydoGy2hsTDQTg2O5sNuYOc3Je/ky', 'ROLE_USER'),
-(3, 'admin2', 'admin2@admin.com', '$2y$10$lxS0LODirzC6N9jZxJGVZ.u5Nr8loeFXWim8.O/y3XgfJD5ctVOXi', 'ROLE_USER');
+(1, 'alexis', 'alexis@alexis.com', '$2y$10$OfEKZ8r6qLMhaunMkWdtH.XrKKLrKrtmX4LyocB5n5FCZd.7PJvGW', 'ROLE_ADMIN'),
+(2, 'Marcel', 'Marcel@Marcel.com', '$2y$10$Pe7tPtgeWxcewV4P5t8W5ukPEydoGy2hsTDQTg2O5sNuYOc3Je/ky', 'ROLE_USER'),
+(4, 'francis', 'francis@francis.com', '$2y$10$QO6u8Jfelrg3CybNPvQobOjjD.zUxjtwWz4ofcEmu1xM3IZgIDHgO', 'ROLE_USER'),
+(5, 'aline', 'aline@aline.com', '$2y$10$o.bwpQ88A0aobNJyQREvIu6V1wcOfQq33fPF9lo88SJbWfB4ZFzYm', 'ROLE_USER'),
+(6, 'sandrine', 'sandrine@sandrine.com', '$2y$10$G/6B7Q4KQ/GhBWRKUE.NBOKa06DeFBaSyGtqcLlKO0vfX1MlXecW2', 'ROLE_USER'),
+(7, 'pascal', 'pascal@pascal.com', '$2y$10$JSU4JEFCK9Tek3EUumfF8OSixYlEuuM6.p08/7ACoFgUDVh22AcuO', 'ROLE_USER');
 
 --
 -- Indexes for dumped tables
@@ -139,7 +142,7 @@ ALTER TABLE `rentals`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
