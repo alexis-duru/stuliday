@@ -27,12 +27,18 @@ if (!empty($_SESSION)) {
                     foreach ($users as $user) {
                     ?>
                         <tr>
-                            <th scope="row"><?php echo $user['id'] ?></th>
+                            <th><?php echo $user['id'] ?></th>
                             <td><?php echo $user['username'] ?></td>
                             <td><?php echo $user['email'] ?></td>
                             <td><?php echo $user['role'] ?></td>
                             <td>Modifier</td>
-                            <td>Supprimer</td>
+                            <td>
+                                <form action="delete.php" method="post">
+                                    <input type="hidden" name="csrf_token" value="<?php echo $token; ?>">
+                                    <input type="hidden" name="id" value="<?php echo $user['id'] ?>">
+                                    <input type="submit" value="delete" name="delete">
+                                </form>
+                            </td>
                         </tr>
                     <?php
                     }

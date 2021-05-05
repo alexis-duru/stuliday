@@ -13,8 +13,8 @@ if (!empty($_SESSION)) {
     <section id="header-banner">
         <div id="header-banner-container">
             <div>
-                <h2>BIENVENUE <?php echo $user['username']; ?></h2>
-                <p>Vous possédez le role <?php echo $user['role']; ?></p>
+                <h2>WELCOME <?php echo $user['username']; ?></h2>
+                <p>You own the role <?php echo $user['role']; ?></p>
             </div>
         </div>
     </section>
@@ -24,14 +24,14 @@ if (!empty($_SESSION)) {
             <div id="container-rental-item">
                 <div class="rental-item">
                     <div>
-                        <button type="button" class="btn-manage" href="manage.php">MANAGE</a>
+                        <a type="button" class="btn-manage" href="manage.php">MANAGE</a>
                     </div>
                     <div>
                     <a class="btn-addnew" href="addnew.php">ADD NEW</a>
                     <div class="open-admin">
                     <?php
                     if ($user['role'] === 'ROLE_ADMIN') {
-                        echo '<a href="admin.php"> Accéder à l\'espace administrateur </a>';
+                        echo '<a href="admin.php"> ACCESS OF ADMINISTRATOR AREA  </a>';
                     }
                     ?>
                     </div>
@@ -48,9 +48,9 @@ if (!empty($_SESSION)) {
 } else {
     ?>
     <div>
-        <p>Vous ne pouvez pas accéder à votre profil sans vous connecter</p>
+        <p>You cannot access your profile without logging in</p>
         <p>
-            <a href="login.php">Se connecter</a>
+            <a href="login.php">SIGN-IN</a>
         </p>
     </div>
 

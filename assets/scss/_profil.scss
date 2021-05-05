@@ -32,7 +32,8 @@
                     background-color: black;
                     height: 30px;
                     border-radius: 30px;
-                    font-style: italic;
+                    font-size: 8px;
+                    // font-style: italic;
                 }
                 >div {
                     width: 100%;
@@ -61,11 +62,9 @@
                     .btn-manage {
                         background-color: black;
                         border-radius: 15px;
-                        border: 0px;
-                        width: 120px;
-                        height: 40px;
+                        width: 80px;
+                        height: 30px;
                         margin: 10px;
-                        color: white;
                     }
                     .btn-addnew {
                         background-color: black;

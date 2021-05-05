@@ -857,7 +857,7 @@ footer #container-footer div {
   background-color: black;
   height: 30px;
   border-radius: 30px;
-  font-style: italic;
+  font-size: 8px;
 }
 #section-profil #section-profil-container #container-rental-item .rental-item > div {
   width: 100%;
@@ -886,11 +886,9 @@ footer #container-footer div {
 #section-profil #section-profil-container #container-rental-item .rental-item > div .btn-manage {
   background-color: black;
   border-radius: 15px;
-  border: 0px;
-  width: 120px;
-  height: 40px;
+  width: 80px;
+  height: 30px;
   margin: 10px;
-  color: white;
 }
 #section-profil #section-profil-container #container-rental-item .rental-item > div .btn-addnew {
   background-color: black;

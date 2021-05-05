@@ -54,10 +54,10 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
 
         //? Etape 4 : Enregistrement des données du formulaire via une requete préparée sql INSERT
         try {
-            $sth = $connect->prepare("INSERT INTO rental
-            (rental_name,rental_description,rental_price, rental_adress, author, rental_category, square_meter)
+            $sth = $connect->prepare("INSERT INTO rentals
+            (rental_name,rental_description,rental_price,rental_adress,author,rental_category,square_meter)
             VALUES
-            (:rental_name,:rental_description,:rental_price, :rental_adress, :rental_category, :square_meter, :author)");
+            (:rental_name,:rental_description,:rental_price,:rental_adress,:rental_category,:square_meter, :author)");
 
                 //? J'affecte chacun des paramètres nommés à leur valeur via un bindValue. Cette opération me protège des injections SQL (en + de l'assainissement des variables)
             $sth->bindValue(':rental_name', $name);
