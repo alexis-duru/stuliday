@@ -28,6 +28,12 @@
                 justify-content: space-around;
                 border-radius: 20px;
                 padding: 30px;
+                .open-admin {
+                    background-color: black;
+                    height: 30px;
+                    border-radius: 30px;
+                    font-style: italic;
+                }
                 >div {
                     width: 100%;
                     display: flex;
@@ -48,13 +54,18 @@
                     a:hover {
                         opacity: 0.8;
                     }
+
+                    button:hover {
+                        opacity: 0.8;
+                    }
                     .btn-manage {
                         background-color: black;
                         border-radius: 15px;
-                        width: 80px;
-                        height: 30px;
+                        border: 0px;
+                        width: 120px;
+                        height: 40px;
                         margin: 10px;
-
+                        color: white;
                     }
                     .btn-addnew {
                         background-color: black;

@@ -1,0 +1,25 @@
+section {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
+    .table-admin {
+        background-color: white;
+        color: black;
+        text-align: center;
+        // display: flex;
+        width: 50%;
+        background-color: $beige;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+        font-family: 'Roboto';
+        height: 50%;
+        border-radius: 30px;
+        th {
+            background-color: white;
+        }
+    }
+
+}

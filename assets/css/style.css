@@ -560,6 +560,19 @@ footer #container-footer div {
   font-weight: 800;
   text-align: center;
   color: black;
+  width: 100%;
+}
+#signin-container #signin-container-in #signin-formulaire-container .sign-in #btn-contact .submit-btn {
+  width: 100%;
+  border: 0px;
+  height: 100%;
+  background-color: #ebe0d9;
+  font-family: "gallient";
+  letter-spacing: 4px;
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
 }
 #signin-container #signin-container-in #signin-formulaire-container .sign-in #btn-contact:hover {
   background-color: #f7e9df;
@@ -840,6 +853,12 @@ footer #container-footer div {
   border-radius: 20px;
   padding: 30px;
 }
+#section-profil #section-profil-container #container-rental-item .rental-item .open-admin {
+  background-color: black;
+  height: 30px;
+  border-radius: 30px;
+  font-style: italic;
+}
 #section-profil #section-profil-container #container-rental-item .rental-item > div {
   width: 100%;
   display: flex;
@@ -861,12 +880,17 @@ footer #container-footer div {
 #section-profil #section-profil-container #container-rental-item .rental-item > div a:hover {
   opacity: 0.8;
 }
+#section-profil #section-profil-container #container-rental-item .rental-item > div button:hover {
+  opacity: 0.8;
+}
 #section-profil #section-profil-container #container-rental-item .rental-item > div .btn-manage {
   background-color: black;
   border-radius: 15px;
-  width: 80px;
-  height: 30px;
+  border: 0px;
+  width: 120px;
+  height: 40px;
   margin: 10px;
+  color: white;
 }
 #section-profil #section-profil-container #container-rental-item .rental-item > div .btn-addnew {
   background-color: black;
@@ -958,6 +982,30 @@ footer #container-footer div {
   width: 80px;
   height: 30px;
   margin: 10px;
+}
+
+section {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  height: 82vh;
+}
+section .table-admin {
+  background-color: white;
+  color: black;
+  text-align: center;
+  width: 50%;
+  background-color: #ebe0d9;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  font-family: "Roboto";
+  height: 50%;
+  border-radius: 30px;
+}
+section .table-admin th {
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
