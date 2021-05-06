@@ -5,7 +5,7 @@ $token = $_POST['csrf_token'];
 var_dump($_POST);
 if (isset($_POST['delete']) && $_POST['csrf_token'] == $token) {
     try {
-        $sth = $connect->prepare("DELETE FROM users WHERE id =:id");
+        $sth = $connect->prepare("DELETE FROM rentals WHERE rental_id =:id");
         $sth->bindValue(':id', $id);
 
         $result = $sth->execute();

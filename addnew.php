@@ -126,7 +126,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                     <input class="input-form" type="text" name="rental_adress" value="" placeholder="Adress">
                     <h3>SQUARE METER</h3>
                     <input class="input-form" type="number" id="square-meter" name="square_meter" placeholder="square meter">
-                <div>
+                <div id="create-return">
                     <button class="btn-create" name="rental_submit" type="submit">CREATE</button>
                     <a class="btn-return" href="profil.php">RETURN</a>
                 </div>

@@ -16,4 +16,8 @@ if (isset($_GET['logout'])) {
     session_destroy();
     header('Location: index.php');
 }
+
+if (empty($_SESSION['id']) && (!isset($page) || $page != 'Homepage' && $page != 'Rental-details' && $page != 'Login' && $page != 'Sign up')) {
+    header('Location:login.php?p');
+}
 ?>

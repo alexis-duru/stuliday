@@ -1,3 +1,4 @@
+<?php $page = 'Profile'; ?>
 <?php require 'inc/header.php'?>
 
 <?php
@@ -14,7 +15,7 @@ if (!empty($_SESSION)) {
         <div id="header-banner-container">
             <div>
                 <h2>WELCOME <?php echo $user['username']; ?></h2>
-                <p>You own the role <?php echo $user['role']; ?></p>
+                <!-- <p>You own the role <?php echo $user['role']; ?></p> -->
             </div>
         </div>
     </section>
@@ -24,20 +25,20 @@ if (!empty($_SESSION)) {
             <div id="container-rental-item">
                 <div class="rental-item">
                     <div>
-                        <a type="button" class="btn-profil" href="manage.php">MANAGE</a>
+                        <a type="button" class="btn-profil" href="manage.php">MY RENTALS</a>
                     </div>
-                    <div>
-                    <a class="btn-profil" href="addnew.php">ADD NEW</a>
-                    </div>
-                    <div>
-                    <div class="btn-profil">
 
+                    <div>
+                        <a class="btn-profil" href="addnew.php">ADD NEW RENTALS</a>
+                    </div>
+
+                    <div>
                     <?php
                     if ($user['role'] === 'ROLE_ADMIN') {
-                        echo '<a href="admin.php"> ACCESS OF ADMINISTRATOR AREA  </a>';
+                        echo '<div class="btn-profil"><a href="admin.php"> ACCESS OF ADMINISTRATOR AREA <div> </a>';?>
+                    <?php
                     }
                     ?>
-                    <div>
                     </div>
                 </div>
             </div>

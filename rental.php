@@ -1,3 +1,4 @@
+<?php $page = 'Rental'; ?>
 <?php require 'inc/header.php' ?>
 <?php
 

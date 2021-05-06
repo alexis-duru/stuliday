@@ -1,3 +1,4 @@
+<?php $page = 'Homepage'; ?>
 <?php require 'inc/header.php' ?>
 
 
@@ -15,7 +16,7 @@
                 <div id="container-home">
                     <div id="buttons-welcome">
                         <div class="container">
-                            <a href="signin.php" class="btn effect01">
+                            <a href="rental.php" class="btn effect01">
                                 <span>search a rental</span>
                             </a>
                         </div>

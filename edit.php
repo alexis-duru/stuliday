@@ -48,9 +48,9 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
         </div>
     </section>
 
-    <section id="section-profil-details">
-        <div id="section-profil-details-container">
-            <div id="container-rental-item-details">
+    <section id="section-rental-details">
+        <div id="container-in-rental-details">
+            <div id="container-in-1">
                 <form action="#" method="POST">
                 <div class="rental-item-details">
                 <img src="assets/img/image/home/3.jpg">
@@ -86,6 +86,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                 <hr>
                 <button type="submit" class="btn btn-success" name="rental_submit">Enregistrer l'article</button>
             </form>
+            <div>
             </div>
         </div>
     </section>
