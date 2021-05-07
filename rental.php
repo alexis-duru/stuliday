@@ -18,10 +18,17 @@ $rentals = $connect->query($sqlRentals)->fetchAll(PDO::FETCH_ASSOC);
     <section id="rental-container">
         <div id="container-in">
             <?php
-            foreach ($rentals as $rental) {
+            foreach ($rentals as $rental) { 
             ?>
                 <div class="rental">
-                    <img src="assets/img/image/home/3.jpg">
+                    <?php if (is_null($rental['image']) || empty($rental['image'])) {
+                            echo "<img src='./public/uploads/noImg.png' alt='rental_image' width='200'/> ";
+                        } else {
+                        ?>
+                            <img src="./public/uploads/<?php echo $rental['image']; ?>" alt='<?php echo $rental['rental_name']; ?>' width='200' />
+                        <?php
+                        }
+                        ?>
                     <div>
                         <h3><?php echo $rental['rental_name']; ?></h3>
                         <p><?php echo $rental['rental_description']; ?></p>
@@ -34,8 +41,6 @@ $rentals = $connect->query($sqlRentals)->fetchAll(PDO::FETCH_ASSOC);
                         <div id="btn-details-rental">
                             <p><a href="rental-details.php?id=<?php echo $rental['rental_id']; ?>" >details</a></p>
                         </div>
-                        
-
                         
                         <p><?php echo $rental['categories_name']; ?></p>
                         <p><?php echo $rental['created_at']; ?></p>
