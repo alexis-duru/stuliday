@@ -27,7 +27,7 @@
                 <li>
                     <a href="rental.php">RENTAL</a>
                 </li>
-                <?php if(empty($_SESSION['id'])) { ?>
+                <?php if(!empty($_SESSION['id'])) { ?>
                 <li>
                     <a href="profil.php">PROFIL <i class="fas fa-user-circle"></i>
                 </li></a>
