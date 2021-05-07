@@ -17,38 +17,40 @@ $rentals = $connect->query($sqlRentals)->fetch(PDO::FETCH_ASSOC);
         </div>
     </section>
 
-    <section id="section-rental-details">
-        <div id="container-in-rental-details">
-            <div id="container-in-1">
-                <img src="assets/img/image/home/3.jpg">
-            </div>
-            <div id="container-in-2">
+    
+
+    <section id="rental-container">
+        <div id="container-in">
+            <div class="rental">
+
+                <?php if (is_null($rental['image']) || empty($rental['image'])) {
+                            echo "<img src='./public/uploads/noImg.png' alt='rental_image' width='200'/> ";
+                            } else {
+                            ?>
+                                <img src="./public/uploads/<?php echo $rental['image']; ?>" alt='<?php echo $rental['rental_name']; ?>' width='200' />
+                            <?php
+                            }
+                            ?>
                 <div>
                     <h2><?php echo $rentals['rental_name']; ?></h2>
-                    <div class="price">
-                        <p class="amount"><?php echo $rentals['rental_price']; ?>$</p>
-                        <p> / </p>
-                        <h4>NIGHT</h4>
-                    </div>
+                        <div class="price">
+                            <p class="amount"><?php echo $rentals['rental_price']; ?>$</p>
+                            <p> / </p>
+                            <h4>NIGHT</h4>
+                        </div>
+                    <span></span>
+                    <p>Category : <?php echo $rentals['categories_name']; ?></p>
+                    <span></span>
+                    <p><?php echo $rentals['rental_description']; ?></p>
+                    <span></span>
+                    <img src="assets/img/image/details-rental-2.jpeg">
+                    <span></span>
+                    <button>BOOK</button>
+                    <span></span>
+                    <p>Published on: <?php echo $rentals['created_at']; ?>
+                    </p>
                 </div>
-                <span></span>
-                <p>Category : <?php echo $rentals['categories_name']; ?></p>
-                <span></span>
-                <p><?php echo $rentals['rental_description']; ?></p>
             </div>
-            <div id="container-in-3">
-                <span></span>
-                <img src="assets/img/image/details-rental-2.jpeg">
-            </div>
-            
-            <div id="container-in-4">
-                <span></span>
-                <button>BOOK</button>
-            </div>
-            <span></span>
-                <p>Published on: <?php echo $rentals['created_at']; ?>
-            </p>
-            
         </div>
     </section>
 
