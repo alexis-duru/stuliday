@@ -59,12 +59,20 @@
             }
             .input-delete {
                 border: 0px;
-                background-color: white;
-                font-family: 'gallient';
-                background-color: $beige;
-                border-radius: 10px;
                 padding-left: 3px;
                 padding-right: 3px;
+                text-transform: uppercase;
+                cursor: pointer;
+                background-color: transparent;
+                font-size: 15px;
+                text-align: center;
+            }
+            .input-edit {
+                border: 0px;
+                padding-left: 3px;
+                padding-right: 3px;
+                text-transform: uppercase;
+
             }
 
         }

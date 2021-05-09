@@ -74,6 +74,8 @@ if (!empty($_SESSION['id'])) {
                         <th scope="col">Name</th>
                         <th scope="col">Price</th>
                         <th scope="col">Adress</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -87,7 +89,7 @@ if (!empty($_SESSION['id'])) {
                             <td><?php echo $rental['rental_price'] ?></td>
                             <td><?php echo $rental['rental_adress'] ?></td>
                             <td>
-                                <a href="edit.php?rental_id=<?php echo $rental['rental_id']; ?>" >edit</a>
+                                <a class='input-edit' href="edit.php?rental_id=<?php echo $rental['rental_id']; ?>" >edit</a>
                             </td>
                             <td>
                                 <form action="delete.php" method="post">

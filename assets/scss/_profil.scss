@@ -38,7 +38,7 @@
                     justify-content: center;
                     flex-direction: column;
                     align-items: center;
-                    a {
+                    // a {
                         // font-family: 'roboto';
                         // color: $beige;
                         // padding: 5px 20px;
@@ -48,8 +48,7 @@
                         // justify-content: center;
                         // display: flex;
                         // align-items: center;
-                    }
-                    
+                    // }
                     .btn-profil {
                         border: 1px solid black;
                         font-family: "Roboto";
@@ -60,12 +59,12 @@
                         background-color: #ebe0d9;
                         background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
                         text-align: center;
+                        transition: .4s ease-in-out;
+                        transform: scale(1);
                     }
                     .btn-profil:hover {
                         opacity: 0.8;
-                        animation: fade-in;
-                        animation-duration: 2sec;
-
+                        transform: scale(1.2);
                     }
                 }
             }

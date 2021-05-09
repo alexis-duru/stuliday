@@ -45,7 +45,7 @@ $rentals = $connect->query($sqlRentals)->fetch(PDO::FETCH_ASSOC);
                     <span></span>
                     <img src="assets/img/image/details-rental-2.jpeg">
                     <span></span>
-                    <button>BOOK</button>
+                    <!-- <button>BOOK</button> -->
                     <span></span>
                     <p>Published on: <?php echo $rentals['created_at']; ?>
                     </p>
