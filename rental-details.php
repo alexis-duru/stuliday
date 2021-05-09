@@ -23,11 +23,11 @@ $rentals = $connect->query($sqlRentals)->fetch(PDO::FETCH_ASSOC);
         <div id="container-in">
             <div class="rental">
 
-                <?php if (is_null($rental['image']) || empty($rental['image'])) {
+                <?php if (is_null($rentals['image']) || empty($rentals['image'])) {
                             echo "<img src='./public/uploads/noImg.png' alt='rental_image' width='200'/> ";
                             } else {
                             ?>
-                                <img src="./public/uploads/<?php echo $rental['image']; ?>" alt='<?php echo $rental['rental_name']; ?>' width='200' />
+                                <img src="./public/uploads/<?php echo $rentals['image']; ?>" alt='<?php echo $rentals['rental_name']; ?>' width='200' />
                             <?php
                             }
                             ?>

@@ -92,7 +92,7 @@ if (!empty($_SESSION['id'])) {
                             <td>
                                 <form action="delete.php" method="post">
                                     <input class="input-delete" type="hidden" name="csrf_token" value="<?php echo $token; ?>">
-                                    <input class="input-delete" type="hidden" name="id" value="<?php echo $rental['id'] ?>">
+                                    <input class="input-delete" type="hidden" name="id" value="<?php echo $rental['rental_id'] ?>">
                                     <input class="input-delete" type="submit" value="delete" name="delete">
                                 </form>
                             </td>
