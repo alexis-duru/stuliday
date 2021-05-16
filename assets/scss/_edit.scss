@@ -1,0 +1,51 @@
+.edit-rental {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        background-color: white;
+        text-align: center;
+        margin: 60px;
+        padding: 17px;
+        border-radius: 20px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        transition: .4s ease-in-out;
+        transform: scale(1);
+        border: 1px solid black;
+    #form-edit {
+        width: auto;
+        font-family: 'roboto';
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input, select, textarea {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            outline: none;
+            border-radius: 30px;
+        }
+        .btn-modification {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border: 1px solid black;
+            font-family: "Roboto";
+            width: 50%;
+            height: 30px;
+            border-radius: 20px;
+            color: black;
+            background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+            transform: scale(1);
+            transition: 0.5s ease-in-out;
+            background-color: white;
+        }
+    }
+}

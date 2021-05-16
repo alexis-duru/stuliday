@@ -24,7 +24,7 @@ H1 {
 
 H2 {
   font-family: "Roboto";
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -100,6 +100,10 @@ header nav ul li a:hover {
 header nav ul li:hover {
   color: black;
   opacity: 0.5;
+}
+header nav #burger {
+  display: none;
+  margin: auto;
 }
 
 #header-banner {
@@ -1076,6 +1080,75 @@ footer #container-footer a:hover {
   padding-left: 3px;
   padding-right: 3px;
   text-transform: uppercase;
+}
+
+.edit-rental {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  margin: 60px;
+  padding: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transition: 0.4s ease-in-out;
+  transform: scale(1);
+  border: 1px solid black;
+}
+.edit-rental #form-edit {
+  width: auto;
+  font-family: "roboto";
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.edit-rental #form-edit input, .edit-rental #form-edit select, .edit-rental #form-edit textarea {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border-radius: 30px;
+}
+.edit-rental #form-edit .btn-modification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid black;
+  font-family: "Roboto";
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  color: black;
+  background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+  background-color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  header nav {
+    position: relative;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav #burger {
+    color: black;
+    font-size: 40px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

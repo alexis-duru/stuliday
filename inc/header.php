@@ -20,7 +20,7 @@
             <h1>
                 <a href='index.php'>STULIDAY</a>
             </h1>
-            <ul>
+            <ul class="liens">
                 <li>
                     <a href="index.php">HOME</a>
                 </li>
@@ -43,5 +43,6 @@
                 </li></a>
                 <?php } ?>
             </ul>
+            <i id="burger" class="fas fa-bars"></i>
         </nav>
     </header>

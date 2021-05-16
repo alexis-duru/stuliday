@@ -43,14 +43,14 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
     <section id="header-banner">
         <div id="header-banner-container">
             <div>
-                <h2>MY PROFIL</h2>
+                <h2>EDIT</h2>
             </div>
         </div>
     </section>
 
     <section id="rental-container">
         <div id="container-in">
-                <div class="rental">
+                <div class="edit-rental">
                     <?php if (is_null($rentals['image']) || empty($rentals['image'])) {
                                 echo "<img src='./public/uploads/noImg.png' alt='rental_image' width='200'/> ";
                             } else {
@@ -60,7 +60,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                             }
                             ?>
                     <div class="rental-item-details">
-                        <form action="#" method="POST">
+                        <form id="form-edit" action="#" method="POST">
                             <!-- <img src="assets/img/image/home/3.jpg"> -->
 
                             <div class="container-info-edit">
@@ -92,7 +92,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                                 </select>
                             </div>
                             <hr>
-                            <button type="submit" class="btn btn-success" name="rental_submit">Enregistrer l'article</button>
+                            <button type="submit" class="btn-modification" name="rental_submit">Enregistrer l'article</button>
                         </form>
                     </div>
                 </div>

@@ -192,7 +192,7 @@
                     <input class="input-form" type="number" id="square-meter" name="square_meter" placeholder="square meter">
                 <div id="create-return">
                     <button name="rental_submit" type="submit">CREATE</button>
-                    <a class="btn-return" href="profil.php">RETURN</a>
+                    <a class="btn-return" href="profil.php">BACK HOME</a>
                 </div>
                 </form>
             </div>

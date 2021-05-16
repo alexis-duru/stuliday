@@ -46,7 +46,7 @@ if (!empty($_SESSION['id'])) {
                             <td><?php echo $user['email'] ?></td>
                             <td><?php echo $user['role'] ?></td>
                             <td>
-                                <form action="delete.php" method="post">
+                                <form action="delete-user.php" method="post">
                                     <input class="input-delete" type="hidden" name="csrf_token" value="<?php echo $token; ?>">
                                     <input class="input-delete" type="hidden" name="id" value="<?php echo $user['id'] ?>">
                                     <input class="input-delete" type="submit" value="delete" name="delete">
@@ -92,7 +92,7 @@ if (!empty($_SESSION['id'])) {
                                 <a class='input-edit' href="edit.php?rental_id=<?php echo $rental['rental_id']; ?>" >edit</a>
                             </td>
                             <td>
-                                <form action="delete.php" method="post">
+                                <form action="delete-rental.php" method="post">
                                     <input class="input-delete" type="hidden" name="csrf_token" value="<?php echo $token; ?>">
                                     <input class="input-delete" type="hidden" name="id" value="<?php echo $rental['rental_id'] ?>">
                                     <input class="input-delete" type="submit" value="delete" name="delete">
