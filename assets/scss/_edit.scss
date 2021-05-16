@@ -22,7 +22,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        input, select, textarea {
+        input, select, textarea, label {
             display: flex;
             flex-direction: column;
             width: 300px;
@@ -30,6 +30,7 @@
             text-align: center;
             outline: none;
             border-radius: 30px;
+            padding: 10px;
         }
         .btn-modification {
             display: flex;
@@ -46,6 +47,13 @@
             transform: scale(1);
             transition: 0.5s ease-in-out;
             background-color: white;
+            transition: .4s ease-in-out;
+            transform: scale(1);
+            margin-top: 20px;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
+        
     }
 }

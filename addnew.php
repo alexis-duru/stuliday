@@ -137,7 +137,7 @@
                 echo "Votre article a bien été ajouté";
 
                 //? Je redirige vers la page des produits.
-                // header('Location: products.php');
+                // header('Location: rental.php');
             } catch (PDOException $error) {
                 echo 'Erreur: ' . $error->getMessage();
             }

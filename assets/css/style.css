@@ -1108,7 +1108,7 @@ footer #container-footer a:hover {
   justify-content: center;
   align-items: center;
 }
-.edit-rental #form-edit input, .edit-rental #form-edit select, .edit-rental #form-edit textarea {
+.edit-rental #form-edit input, .edit-rental #form-edit select, .edit-rental #form-edit textarea, .edit-rental #form-edit label {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -1116,6 +1116,7 @@ footer #container-footer a:hover {
   text-align: center;
   outline: none;
   border-radius: 30px;
+  padding: 10px;
 }
 .edit-rental #form-edit .btn-modification {
   display: flex;
@@ -1132,6 +1133,12 @@ footer #container-footer a:hover {
   transform: scale(1);
   transition: 0.5s ease-in-out;
   background-color: white;
+  transition: 0.4s ease-in-out;
+  transform: scale(1);
+  margin-top: 20px;
+}
+.edit-rental #form-edit .btn-modification:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1100px) {

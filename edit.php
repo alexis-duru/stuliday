@@ -33,7 +33,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
 
              $sth->execute();
              echo "Votre article a bien été modifié";
-             header('Location: rental.php?id=' . $id);
+            //  header('Location: manage.php?id=' . $id);
         } catch (PDOException $error) {
             echo 'Erreur: ' . $error->getMessage();
         }
@@ -83,7 +83,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                                     //? On va boucler sur l'array categories, de façon à ce que chaque ligne de la boucle corresponde à une variable $category et aussi à une ligne de la BDD.
                                     foreach ($categories as $category) {
                                     ?>
-                                        <option <?php echo $category['categories_id'] === $rentals['rental_category'] ? 'selected' : ''; ?> value="<?php echo $rentals['rental_category']; ?>">
+                                        <option <?php echo $category['categories_id'] === $rentals['rental_category'] ? 'selected' : ''; ?> value="<?php echo $category['categories_id']; ?>">
                                             <?php echo $category['categories_name']; ?>
                                         </option>
                                     <?php
