@@ -22,18 +22,18 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
 
     if (is_int($price) && $price > 0) {
         try {
-            $sth = $connect->prepare("UPDATE products
+            $sth = $connect->prepare("UPDATE rentals
             SET
-            WHERE rental_id = :id");
+            rental_name=:rental_name,rental_description=:rental_description,rental_price=:rental_price, rental_category=:rental_category WHERE rental_id = :id");
              $sth->bindValue(':rental_name', $name);
              $sth->bindValue(':rental_description', $description);
              $sth->bindValue(':rental_price', $price);
-             $sth->bindValue(':category', $category);
+             $sth->bindValue(':rental_category', $category);
              $sth->bindValue(':id', $id);
 
              $sth->execute();
              echo "Votre article a bien été modifié";
-             header('Location: product.php?id=' . $id);
+             header('Location: rental.php?id=' . $id);
         } catch (PDOException $error) {
             echo 'Erreur: ' . $error->getMessage();
         }
@@ -78,7 +78,7 @@ if (isset($_POST['rental_submit']) && !empty($_POST['rental_name']) && !empty($_
                             <div>
                                 <label for="InputCategory">Categories</label>
                                 <select id="InputCategory" name="rental_category" required>
-                                    <?php echo $rentals['category']; ?>"><?php echo $rentals['rental_name']; ?>
+                                    <?php echo $rentals['rental_category']; ?>"><?php echo $rentals['rental_name']; ?>
                                     <?php
                                     //? On va boucler sur l'array categories, de façon à ce que chaque ligne de la boucle corresponde à une variable $category et aussi à une ligne de la BDD.
                                     foreach ($categories as $category) {
